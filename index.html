@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trang Chủ</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./node_modules/owl.carousel2/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./node_modules/owl.carousel2/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./Global/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light nav-ct">
+            <a class="navbar-brand" href="#"><img src="./Global/images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <div class="d-flex flex-column">
+                    <p class="address_name_headquarters">Sở kế hoạch và đầu tư</p>
+                    <p class="name_project">Hệ thống quản lý dự án đầu tư của doanh nghiệp, hợp tác xã và các tổ chức,
+                      cá nhân khác trên địa bàn tỉnh Hà Tĩnh</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="nav-right">
+                <li>
+                  <div id="google_translate_element"></div>
+                </li>
+                <li><a href="#">Hướng dẫn</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Đăng nhập</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="content-load">
+    <div class="container-fluid">
+      <section class="main-top">
+        <div class="row">
+          <div class="col">
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./node_modules/owl.carousel2/dist/owl.carousel.min.js"></script>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+          pageLanguage: 'en'
+        },
+        'google_translate_element'
+      );
+
+      // Native (but only works in browsers that support query selector)
+      if (typeof (document.querySelector) == 'function') {
+        document.querySelector('.goog-logo-link').setAttribute('style', 'display: none');
+        document.querySelector('.goog-te-gadget').setAttribute('style', 'font-size: 0');
+        document.querySelector('.goog-te-combo').classList.add("form-control");
+      }
+
+      // If you have jQuery - works cross-browser - uncomment this
+      jQuery('.goog-logo-link').css('display', 'none');
+      jQuery('.goog-te-gadget').css('font-size', '0');
+    }
+  </script>
+  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
