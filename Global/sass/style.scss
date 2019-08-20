@@ -2,7 +2,8 @@
   margin: 0px;
   padding: 0px;
 }
-
+$fa-font-path: '../assets/fonts';
+@import "~font-awesome/css/font-awesome.css";
 @font-face {
   font-family: "Roboto-Bold";
   src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot");
@@ -121,5 +122,97 @@ main.content-load {
     left: 0;
   }
 
-  .main-top {}
+  .main-top {
+    .title {
+      font-size: 26px;
+      font-family: "Roboto-Light";
+      font-weight: normal;
+      color: #fff;
+      text-transform: uppercase
+    }
+
+    .line-center {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        width: 1px;
+        height: 85%;
+        background-color: #fff;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto
+      }
+    }
+
+    .luy-ke-thang {
+      color: #fff;
+      .icon-ct{
+        margin-bottom: -15px;
+      }
+      .title {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Roboto-Bold';
+      }
+
+      p {
+        margin: 0px;
+        text-align: center;
+
+        i {
+          font-size: 20px;
+        }
+
+        &.title {
+          margin-bottom: 25px;
+        }
+
+        &.tong-so-du-an {
+          font-size: 18px;
+          font-family: 'Roboto-Bold';
+          margin-bottom: 0;
+
+          .number {
+            color: #00c0ff;
+            font-size: 40px;
+            font-family: "Roboto-Regular";
+          }
+        }
+
+      }
+
+      .col-tong-so-du-an {
+        border-bottom: 1px solid #fff;
+      }
+
+      .col-chi-tiet {
+        position: relative;
+
+        // &.line-left::before {
+
+        // }
+
+
+        ul.chi-tiet-tong-so-du-an {
+          list-style-type: none;
+          float: right;
+          margin: 0;
+          font-size: 18px;
+          font-family: 'Roboto-Bold';
+
+        }
+
+        .number {
+          font-size: 30px;
+          font-family: "Roboto-Regular";
+        }
+      }
+
+    }
+
+    .luy-ke-tong-nam {}
+  }
 }

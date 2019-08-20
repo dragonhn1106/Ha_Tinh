@@ -1,3 +1,4 @@
+@import url(~font-awesome/css/font-awesome.css);
 * {
   margin: 0px;
   padding: 0px; }
@@ -70,3 +71,57 @@ main.content-load {
     top: 0;
     opacity: 0.15;
     left: 0; }
+  main.content-load .main-top .title {
+    font-size: 26px;
+    font-family: "Roboto-Light";
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase; }
+  main.content-load .main-top .line-center {
+    position: relative; }
+    main.content-load .main-top .line-center::before {
+      position: absolute;
+      width: 1px;
+      height: 85%;
+      background-color: #fff;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
+  main.content-load .main-top .luy-ke-thang {
+    color: #fff; }
+    main.content-load .main-top .luy-ke-thang .icon-ct {
+      margin-bottom: -15px; }
+    main.content-load .main-top .luy-ke-thang .title {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: 'Roboto-Bold'; }
+    main.content-load .main-top .luy-ke-thang p {
+      margin: 0px;
+      text-align: center; }
+      main.content-load .main-top .luy-ke-thang p i {
+        font-size: 20px; }
+      main.content-load .main-top .luy-ke-thang p.title {
+        margin-bottom: 25px; }
+      main.content-load .main-top .luy-ke-thang p.tong-so-du-an {
+        font-size: 18px;
+        font-family: 'Roboto-Bold';
+        margin-bottom: 0; }
+        main.content-load .main-top .luy-ke-thang p.tong-so-du-an .number {
+          color: #00c0ff;
+          font-size: 40px;
+          font-family: "Roboto-Regular"; }
+    main.content-load .main-top .luy-ke-thang .col-tong-so-du-an {
+      border-bottom: 1px solid #fff; }
+    main.content-load .main-top .luy-ke-thang .col-chi-tiet {
+      position: relative; }
+      main.content-load .main-top .luy-ke-thang .col-chi-tiet ul.chi-tiet-tong-so-du-an {
+        list-style-type: none;
+        float: right;
+        margin: 0;
+        font-size: 18px;
+        font-family: 'Roboto-Bold'; }
+      main.content-load .main-top .luy-ke-thang .col-chi-tiet .number {
+        font-size: 30px;
+        font-family: "Roboto-Regular"; }
