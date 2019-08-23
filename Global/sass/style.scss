@@ -377,9 +377,11 @@ main .content-load-top {
     .form-search {
       .txt-input {
         position: relative;
-        input{
+
+        input {
           height: 100%;
         }
+
         .link-reset {
           position: absolute;
           top: 0;
@@ -613,11 +615,7 @@ footer .footer-bottom ul li.dang-nhap a::after {
         width: 100% !important;
         border: 1px solid #fff !important;
 
-        a {
-          .title {}
 
-          .sub-title {}
-        }
       }
     }
   }
