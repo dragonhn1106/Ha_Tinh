@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.otf") format("opentype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.svg") format("svg"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.woff2") format("woff2");
+  /* Modern Browsers */ }
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto/Roboto-Regular/fonts/Roboto-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light/fonts/Roboto-Light.woff") format("woff"); }
+
+:root {
+  --color-blue: #2c84c5;
+  --color-white: #fff; }
+
+.list-menu-tab .form-search-top .form-search-top__right {
+  position: relative; }
+  .list-menu-tab .form-search-top .form-search-top__right #search-du-an {
+    padding-right: 15%;
+    font-size: 15px; }
+    .list-menu-tab .form-search-top .form-search-top__right #search-du-an::-webkit-input-placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #a5c3e2;
+      opacity: 1;
+      /* Firefox */ }
+    .list-menu-tab .form-search-top .form-search-top__right #search-du-an:-ms-input-placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #a5c3e2;
+      opacity: 1;
+      /* Firefox */ }
+    .list-menu-tab .form-search-top .form-search-top__right #search-du-an::-ms-input-placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #a5c3e2;
+      opacity: 1;
+      /* Firefox */ }
+    .list-menu-tab .form-search-top .form-search-top__right #search-du-an::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #a5c3e2;
+      opacity: 1;
+      /* Firefox */ }
+    .list-menu-tab .form-search-top .form-search-top__right #search-du-an:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #a5c3e2; }
+    .list-menu-tab .form-search-top .form-search-top__right #search-du-an::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #a5c3e2; }
+  .list-menu-tab .form-search-top .form-search-top__right #reset-inp {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 22%;
+    margin: auto;
+    line-height: 38px;
+    z-index: 11111;
+    text-decoration: underline;
+    color: #6b6e6f;
+    font-family: "Roboto-Bold";
+    font-size: 18px; }
+  .list-menu-tab .form-search-top .form-search-top__right #btn-search {
+    padding: 0 20px;
+    border: 0px;
+    font-family: "Roboto-Bold";
+    background-color: var(--color-blue);
+    color: var(--color-white); }
+
+.list-menu-tab .form-search-top .form-search-top__left .form-chkb input {
+  border: 0px; }
+  .list-menu-tab .form-search-top .form-search-top__left .form-chkb input[type="radio"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    -ms-appearance: checkbox; }

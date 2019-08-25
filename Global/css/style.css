@@ -1,8 +1,4 @@
 @import url(~font-awesome/css/font-awesome.css);
-* {
-  margin: 0px;
-  padding: 0px; }
-
 @font-face {
   font-family: "Roboto-Bold";
   src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot");
@@ -17,6 +13,10 @@
 @font-face {
   font-family: "Roboto-Light";
   src: url("../fonts/Roboto/Roboto-Light/fonts/Roboto-Light.woff") format("woff"); }
+
+* {
+  margin: 0px;
+  padding: 0px; }
 
 :root {
   --color-white: #fff;

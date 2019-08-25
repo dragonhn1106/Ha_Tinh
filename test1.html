@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-8">
+            <div class="myChart">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script>
+        var config = {
+            type: 'bar',
+            data: {
+                labels: [
+                    ["January", "First Month", "Jellyfish", "30 of them"],
+                    ["February", "Second Month", "Foxes", "20 of them"],
+                    ["March", "Third Month", "Mosquitoes", "None of them"], "April", "May", "June", "July"
+                ],
+                datasets: [{
+                    label: "My First dataset",
+                    data: [65, 40, 80, 81, 56, 85, 45],
+                    backgroundColor: "rgba(255,99,132,0.2)",
+                }, {
+                    label: "My Second dataset",
+                    data: [40, 80, 21, 56, 85, 45, 65],
+                    backgroundColor: "rgba(99,255,132,0.2)",
+                }]
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false,
+                        lineWidth: 1,
+                        zeroLineWidth: 1,
+                        zeroLineColor: '#666666',
+                        drawTicks: false
+                    },
+                    ticks: {
+                        display: true,
+                        stepSize: 0,
+                        min: 0,
+                        autoSkip: false,
+                        fontSize: 11,
+                        padding: 12
+                    }
+                }],
+                yAxes: [{
+                    ticks: {
+                        padding: 5
+                    },
+                    gridLines: {
+                        display: true,
+                        lineWidth: 1,
+                        zeroLineWidth: 2,
+                        zeroLineColor: '#666666'
+                    }
+                }]
+            },
+            spanGaps: true,
+            responsive: true,
+            maintainAspectRatio: true
+        };
+
+        var ctx = document.getElementById("myChart").getContext("2d");
+        new Chart(ctx, config);
+    </script>
+</body>
+
+</html>

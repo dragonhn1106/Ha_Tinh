@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.otf") format("opentype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.svg") format("svg"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.woff2") format("woff2");
+  /* Modern Browsers */ }
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto/Roboto-Regular/fonts/Roboto-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light/fonts/Roboto-Light.woff") format("woff"); }

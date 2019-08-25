@@ -1,0 +1,72 @@
+@import "./font-style.scss";
+
+:root {
+	--color-blue: #2c84c5;
+	--color-white: #fff;
+}
+
+.list-menu-tab {
+	.form-search-top {
+		.form-search-top__right {
+			position: relative;
+
+			#search-du-an {
+				padding-right: 15%;
+				font-size: 15px;
+
+				&::placeholder {
+					/* Chrome, Firefox, Opera, Safari 10.1+ */
+					color: #a5c3e2;
+					opacity: 1;
+					/* Firefox */
+				}
+
+				&:-ms-input-placeholder {
+					/* Internet Explorer 10-11 */
+					color: #a5c3e2;
+				}
+
+				&::-ms-input-placeholder {
+					/* Microsoft Edge */
+					color: #a5c3e2;
+				}
+			}
+
+			#reset-inp {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 22%;
+				margin: auto;
+				line-height: 38px;
+				z-index: 11111;
+				text-decoration: underline;
+				color: #6b6e6f;
+				font-family: "Roboto-Bold";
+				font-size: 18px;
+			}
+
+			#btn-search {
+				padding: 0 20px;
+				border: 0px;
+				font-family: "Roboto-Bold";
+				background-color: var(--color-blue);
+				color: var(--color-white)
+			}
+		}
+
+		.form-search-top__left {
+			.form-chkb {
+				input {
+					border: 0px;
+
+					&[type="radio"] {
+						-webkit-appearance: checkbox;
+						-moz-appearance: checkbox;
+						-ms-appearance: checkbox;
+					}
+				}
+			}
+		}
+	}
+}

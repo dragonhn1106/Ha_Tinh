@@ -1,47 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
+
 <body>
-    <canvas id="mixed-chart" width="800" height="450"></canvas>
-    <script>
-        new Chart(document.getElementById("mixed-chart"), {
-    type: 'bar',
-    data: {
-      labels: ["1900", "1950", "1999", "2050"],
-      datasets: [{
-          label: "Europe",
-          type: "line",
-          borderColor: "#8e5ea2",
-          data: [408,547,675,734],
-          fill: false
-        }, {
-          label: "Africa",
-          type: "line",
-          borderColor: "#3e95cd",
-          data: [133,221,783,2478],
-          fill: false
-        },  {
-          label: "Africa",
-          type: "bar",
-          backgroundColor: "rgba(0,0,0,0.2)",
-          backgroundColorHover: "#3e95cd",
-          data: [133,221,783,2478]
-        }
-      ]
-    },
-    options: {
-      title: {
-        display: true,
-        text: 'Population growth (millions): Europe & Africa'
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd; height: 100%;">
+          <div class="d-flex justify-content-between align-content-center mb-4">
+            <p class="w-75 m-0">Tình hình thực hiện dự án đầu tư trên địa bàn tỉnh hàng năm</p>
+            <p class="fas fa-bars"></p>
+          </div>
+          <div style="position: relative;height: 100%;">
+            <canvas class="" id="mixed-chart-right"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col-6">
+            <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd">
+              <div class="d-flex justify-content-between align-content-center mb-4">
+                <p class="w-75 m-0">Tình hình thực hiện dự án đầu tư trên địa bàn tỉnh hàng năm</p>
+                <p class="fas fa-bars"></p>
+              </div>
+              <canvas id="bar-chart-top-left" class="" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd">
+              <div class="d-flex justify-content-between align-content-center mb-4">
+                <p class="w-75 m-0">Tình hình thực hiện dự án đầu tư trên địa bàn tỉnh hàng năm</p>
+                <p class="fas fa-bars"></p>
+              </div>
+              <canvas id="bar-chart-horizontal" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd">
+              <div class="d-flex justify-content-between align-content-center mb-4">
+                <p class="w-75 m-0">Tình hình thực hiện dự án đầu tư trên địa bàn tỉnh hàng năm</p>
+                <p class="fas fa-bars"></p>
+              </div>
+              <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="./char-js.js"></script>
+  <script src="./Global/js/mixed-chart-right.js"></script>
+  <script src="./Global/js//bar-chart-top-left.js"></script>
+  <script src="./Global/js/bar-chart-grouped.js"></script>
+  <script>
+    new Chart(document.getElementById("bar-chart-horizontal"), {
+      type: 'horizontalBar',
+      data: {
+        labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+        datasets: [{
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+          data: [2478, 5267, 734, 784, 433]
+        }]
       },
-      legend: { display: false }
-    }
-});
-    </script>
+      options: {
+        legend: {
+          display: false
+        },
+        title: {
+          display: true,
+          text: 'Predicted world population (millions) in 2050'
+        }
+      }
+    });
+  </script>
 </body>
+
 </html>
