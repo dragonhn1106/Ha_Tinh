@@ -2,150 +2,820 @@
 <html lang="en">
 
 <head>
-	<title>Title</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-	<link rel="stylesheet" href="./Global/css/tra-cuu-thong-tin-du-an.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="./Global/css/tra-cuu-thong-tin-du-an.css">
+  <link rel="stylesheet" href="./Global/css/input.css">
+  <link rel="stylesheet" href="./node_modules/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="./node_modules/select2-bootstrap-theme/dist/select2-bootstrap.min.css">
+  <link href="./global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+  <!-- <link href="./assets/css/components.min.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="./Global/css/datatable.css">
+  <link href="./assets/css/colors.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./Global/css/datepicker.css">
+  <link rel="stylesheet" href="./Global/css/tra-cuu-thong-tin-dau-thau.css">
 </head>
 
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<section class="list-menu-tab ">
-					<ul class="nav nav-pills d-flex flex-sm-nowrap flex-wrap" id="pills-tab" role="tablist">
-						<li class="nav-item m-auto">
-							<a class="nav-link active" id="pills-tra-cu-thong-tin-du-an-tab" data-toggle="pill"
-								href="#pills-tra-cu-thong-tin-du-an" role="tab" aria-controls="pills-tra-cu-thong-tin-du-an"
-								aria-selected="true">
-								<div class="d-flex justify-content-start align-content-center">
-									<div class="w-25">
-										<div class="icon-ct d-flex align-content-center h-100">
-											<p class="fas fa-folder-open m-auto"></p>
-										</div>
-									</div>
-									<div class="w-75">
-										<div class="d-flex flex-column">
-											<p class="m-0 text-uppercase title">TRA CỨU THÔNG TIN DỰ ÁN</p>
-											<p class="m-0 title-sub">Tìm kiếm tên dự án, mã dự án, nhà
-												đầu tư...</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="nav-item m-auto">
-							<a class="nav-link" id="pills-tra-cuu-rhong-tin-dau-thau-tab" data-toggle="pill"
-								href="#pills-tra-cuu-rhong-tin-dau-thau" role="tab" aria-controls="pills-tra-cuu-rhong-tin-dau-thau"
-								aria-selected="false">
-								<div class="d-flex justify-content-start align-content-center">
-									<div class="w-25">
-										<div class="icon-ct d-flex align-content-center h-100">
-											<p class="fas fa-folder-open m-auto"></p>
-										</div>
-									</div>
-									<div class="w-75">
-										<div class="d-flex flex-column">
-											<p class="m-0 text-uppercase">TRA CỨU THÔNG TIN ĐẤU THẦU</p>
-											<p class="m-0 title-sub">Tìm kiếm thông báo mời thầu, kết quả
-												lựa chọn nhà đầu tư...</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li class="nav-item m-auto">
-							<a class="nav-link" id="pills-ban-do-du-an-tab" data-toggle="pill" href="#pills-ban-do-du-an" role="tab"
-								aria-controls="pills-ban-do-du-an" aria-selected="false">
-								<div class="d-flex justify-content-start align-content-center">
-									<div class="w-25">
-										<div class="icon-ct d-flex align-content-center h-100">
-											<p class="fas fa-folder-open m-auto"></p>
-										</div>
-									</div>
-									<div class="w-75">
-										<div class="d-flex flex-column">
-											<p class="m-0 text-uppercase">BẢN ĐỒ DỰ ÁN (beta)</p>
-											<p class="m-0 title-sub">Định vị vị trí các dự án trên bản đồ tỉnh
-												Hà Tĩnh</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</li>
-					</ul>
-					<div class="tab-content" id="pills-tabContent">
-						<div class="tab-pane fade show active" id="pills-tra-cu-thong-tin-du-an" role="tabpanel"
-							aria-labelledby="pills-home-tab">
-							<div class="tra-cu-thong-tin-du-an">
-								<div class="form-search">
-									<div class="form-search-top">
-										<div class="d-flex justify-content-between align-items-center">
-											<div class="form-search-top__right w-50">
-												<div class="input-group">
-													<input id="search-du-an" type="text" class="form-control"
-														placeholder="Nhập từ khóa (Tên dự án/ Tên nhà đầu tư)">
-													<div class="input-group-append">
-														<a href="javascript:void(0)" id="reset-inp">Làm lại</a>
-														<button class="btn" id="btn-search" type="button">Tìm kiếm</button>
-													</div>
-												</div>
-											</div>
-											<div class="w-50 form-search-top__left">
-												<div class="d-flex justify-content-between align-items-center">
-													<div class="form-check form-chkb">
-														<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-															value="option1" checked>
-														<label class="form-check-label" for="exampleRadios1">
-															Đầu tư trong nước
-														</label>
-													</div>
-													<div class="form-check form-chkb">
-														<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-															value="option2">
-														<label class="form-check-label" for="exampleRadios2">
-															Đầu tư nước ngoài (FDI)
-														</label>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="pills-tra-cuu-rhong-tin-dau-thau" role="tabpanel"
-							aria-labelledby="pills-tra-cuu-rhong-tin-dau-thau-tab">
-							...</div>
-						<div class="tab-pane fade" id="pills-ban-do-du-an" role="tabpanel" aria-labelledby="pills-ban-do-du-an-tab">
-							...</div>
-					</div>
-				</section>
-			</div>
-		</div>
-	</div>
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-	</script>
-	<script>
-		$("#reset-inp").click(function () {
-			$("#search-du-an").val("");
-		});
-	</script>
+  <div class="container-fluid">
+    <section class="list-menu-tab ">
+      <ul class="nav nav-pills d-flex flex-sm-nowrap flex-wrap justify-content-between align-content-center row"
+        id="pills-tab" role="tablist">
+        <li class="nav-item col-sm-4 col-12">
+          <a class="nav-link" id="pills-tra-cu-thong-tin-du-an-tab" data-toggle="pill"
+            href="#pills-tra-cu-thong-tin-du-an" role="tab" aria-controls="pills-tra-cu-thong-tin-du-an"
+            aria-selected="true">
+            <div class="d-flex justify-content-start align-content-center">
+              <div class="w-25">
+                <div class="icon-ct d-flex align-content-center h-100">
+                  <p class="fas fa-folder-open m-auto"></p>
+                </div>
+              </div>
+              <div class="w-75">
+                <div class="d-flex flex-column">
+                  <p class="m-0 text-uppercase title">TRA CỨU THÔNG TIN DỰ ÁN</p>
+                  <p class="m-0 title-sub">Tìm kiếm tên dự án, mã dự án, nhà
+                    đầu tư...</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item col-sm-4 col-12">
+          <a class="nav-link" id="pills-tra-cuu-rhong-tin-dau-thau-tab" data-toggle="pill"
+            href="#pills-tra-cuu-rhong-tin-dau-thau" role="tab" aria-controls="pills-tra-cuu-rhong-tin-dau-thau"
+            aria-selected="false">
+            <div class="d-flex justify-content-start align-content-center">
+              <div class="w-25">
+                <div class="icon-ct d-flex align-content-center h-100">
+                  <p class="fas fa-folder-open m-auto"></p>
+                </div>
+              </div>
+              <div class="w-75">
+                <div class="d-flex flex-column">
+                  <p class="m-0 text-uppercase title">TRA CỨU THÔNG TIN ĐẤU THẦU</p>
+                  <p class="m-0 title-sub">Tìm kiếm thông báo mời thầu, kết quả
+                    lựa chọn nhà đầu tư...</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item col-sm-4 col-12">
+          <a class="nav-link" id="pills-ban-do-du-an-tab" data-toggle="pill" href="#pills-ban-do-du-an" role="tab"
+            aria-controls="pills-ban-do-du-an" aria-selected="false">
+            <div class="d-flex justify-content-start align-content-center">
+              <div class="w-25">
+                <div class="icon-ct d-flex align-content-center h-100">
+                  <p class="fas fa-folder-open m-auto"></p>
+                </div>
+              </div>
+              <div class="w-75">
+                <div class="d-flex flex-column">
+                  <p class="m-0 text-uppercase">BẢN ĐỒ DỰ ÁN (beta)</p>
+                  <p class="m-0 title-sub">Định vị vị trí các dự án trên bản đồ tỉnh
+                    Hà Tĩnh</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade" id="pills-tra-cu-thong-tin-du-an" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="tra-cu-thong-tin-du-an">
+            <div class="form-search">
+              <div class="form-search-top">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="form-search-top__right">
+                      <div class="input-group">
+                        <input id="search-du-an" type="text" class="form-control"
+                          placeholder="Nhập từ khóa (Tên dự án/ Tên nhà đầu tư)">
+                        <div class="input-group-append">
+                          <a href="javascript:void(0)" id="reset-inp">Làm lại</a>
+                          <button class="btn" id="btn-search" type="button">Tìm kiếm</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class=" form-search-top__left">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="form-check">
+                          <label class="form-check form-chkb">Đầu tư nước ngoài (FDI)
+                            <input type="radio" checked="checked" class="form-check-input" name="radio">
+                            <span class="checkmark form-check-label"></span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check form-chkb">Đầu tư trong nước
+                            <input type="radio" checked="checked" class="form-check-input" name="radio">
+                            <span class="checkmark form-check-label"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-search-bottom">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="d-flex justify-content-between align-content-center">
+                          <select class="slc_ct form-control" name="state">
+                            <option value="AL">Cơ quan phê duyệt</option>
+                            <option value="WY">Wyoming</option>
+                          </select>
+                          <select class="slc_ct form-control" name="state">
+                            <option value="AL">Địa điểm thực hiện</option>
+                          </select>
+                        </div>
+                        <div class="d-flex justify-content-between align-content-center">
+                          <select class="slc_ct form-control" name="state">
+                            <option value="AL">Cơ quan phê duyệt</option>
+                            <option value="WY">Wyoming</option>
+                          </select>
+                          <select class="slc_ct form-control" name="state">
+                            <option value="AL">Địa điểm thực hiện</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <div class="d-flex flex-column align-items-center justify-content-start">
+                            <div class="w-100">
+                              <label for="exampleInputEmail1">Thời gian hoạt động</label>
+                            </div>
+                            <div class="input-group">
+                              <span class="input-group-prepend">
+                                <span class="input-group-text"><i class="icon-calendar22"></i></span>
+                              </span>
+                              <input type="text" class="form-control daterange-basic" value="01/01/2015 - 01/31/2015">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="form-group ">
+                      <div class="d-flex flex-column align-items-center justify-content-start">
+                        <div class="w-100">
+                          <label for="exampleInputEmail1">Tổng vốn đầu tư(tỷ VNĐ)</label>
+                        </div>
+                        <div class="input-group">
+
+                          <input type="text" class="form-control" value="">
+                          <span class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-chevron-down"></i></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-content">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="table-responsive">
+                        <table class="table table-bordered datatable-button-html5-basic">
+                          <thead>
+                            <tr>
+                              <th>STT</th>
+                              <th class="w-20">Tên dự án</th>
+                              <th>Tên nhà đầu tư</th>
+                              <th>Cơ quan phê duyệt</th>
+                              <th class="w-10">Địa điểm thực hiện</th>
+                              <th class="">Nhóm nghành</th>
+                              <th class="w-10">Trạng thái dự án</th>
+                              <th>Thời gian hoạt động</th>
+                              <th>Tổng vốn đầu tư</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                </a>
+                              </td>
+                              <td>
+                                Công ty cổ phần ABC
+                              </td>
+                              <td>
+                                UBDN huyên XYZ
+                              </td>
+                              <td>
+                                Thôn 2, xã ABC, huyện XYZ
+                              </td>
+                              <td>
+                                Năng lượng
+                              </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>
+                                <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm sản
+                                  xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                </a>
+                              </td>
+                              <td>Công ty cổ phần Một hai ba</td>
+                              <td>Bộ Giao thông vận tải</td>
+                              <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                              <td>Tài nguyên môi trường </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>
+                                <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                </a>
+                              </td>
+                              <td>
+                                Công ty cổ phần ABC
+                              </td>
+                              <td>
+                                UBDN huyên XYZ
+                              </td>
+                              <td>
+                                Thôn 2, xã ABC, huyện XYZ
+                              </td>
+                              <td>
+                                Năng lượng
+                              </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>
+                                <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm sản
+                                  xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                </a>
+                              </td>
+                              <td>Công ty cổ phần Một hai ba</td>
+                              <td>Bộ Giao thông vận tải</td>
+                              <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                              <td>Tài nguyên môi trường </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>
+                                <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                </a>
+                              </td>
+                              <td>
+                                Công ty cổ phần ABC
+                              </td>
+                              <td>
+                                UBDN huyên XYZ
+                              </td>
+                              <td>
+                                Thôn 2, xã ABC, huyện XYZ
+                              </td>
+                              <td>
+                                Năng lượng
+                              </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>
+                                <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm sản
+                                  xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                </a>
+                              </td>
+                              <td>Công ty cổ phần Một hai ba</td>
+                              <td>Bộ Giao thông vận tải</td>
+                              <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                              <td>Tài nguyên môi trường </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>
+                                <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                </a>
+                              </td>
+                              <td>
+                                Công ty cổ phần ABC
+                              </td>
+                              <td>
+                                UBDN huyên XYZ
+                              </td>
+                              <td>
+                                Thôn 2, xã ABC, huyện XYZ
+                              </td>
+                              <td>
+                                Năng lượng
+                              </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td>
+                                <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm sản
+                                  xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                </a>
+                              </td>
+                              <td>Công ty cổ phần Một hai ba</td>
+                              <td>Bộ Giao thông vận tải</td>
+                              <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                              <td>Tài nguyên môi trường </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td>
+                                <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                </a>
+                              </td>
+                              <td>
+                                Công ty cổ phần ABC
+                              </td>
+                              <td>
+                                UBDN huyên XYZ
+                              </td>
+                              <td>
+                                Thôn 2, xã ABC, huyện XYZ
+                              </td>
+                              <td>
+                                Năng lượng
+                              </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td>
+                                <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm sản
+                                  xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                </a>
+                              </td>
+                              <td>Công ty cổ phần Một hai ba</td>
+                              <td>Bộ Giao thông vận tải</td>
+                              <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                              <td>Tài nguyên môi trường </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td>
+                                <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                </a>
+                              </td>
+                              <td>
+                                Công ty cổ phần ABC
+                              </td>
+                              <td>
+                                UBDN huyên XYZ
+                              </td>
+                              <td>
+                                Thôn 2, xã ABC, huyện XYZ
+                              </td>
+                              <td>
+                                Năng lượng
+                              </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
+                              <td>
+                                <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm sản
+                                  xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                </a>
+                              </td>
+                              <td>Công ty cổ phần Một hai ba</td>
+                              <td>Bộ Giao thông vận tải</td>
+                              <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                              <td>Tài nguyên môi trường </td>
+                              <td>
+                                Đã hoàn thành
+                              </td>
+                              <td>
+                                2017-2067
+                              </td>
+                              <td>
+                                567 tỷ VNĐ
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show active" id="pills-tra-cuu-rhong-tin-dau-thau" role="tabpanel"
+          aria-labelledby="pills-tra-cuu-rhong-tin-dau-thau-tab">
+          <div class="container-fuild">
+            <div class="main-content">
+              <div class="row">
+                <div class="col-sm-8 col-12  order-2 order-sm-1">
+                  <div class="table-responsive">
+                    <table class="table table-bordered datatable-button-html5-basic">
+                      <thead>
+                        <tr>
+                          <th>STT</th>
+                          <th class="w-20">Tên gói thầu</th>
+                          <th>Địa điểm thực hiện</th>
+                          <th>Bên mời thầu</th>
+                          <th class="">Thời điểm phát hành HSMT</th>
+                          <th class="">Thời điểm đóng thầu</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>
+                            <a href="#">Xây dựng cầu An Mỹ, cầu An Xuyên, cầu Trắng và cầu Xéo
+                            </a>
+                          </td>
+                          <td>
+                            Thôn 2, xã ABC, huyện XYZ
+                          </td>
+                          <td>
+                            UBND tỉnh Hà Tĩnh
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>
+                            <a href="#">Xây dựng cầu An Mỹ, cầu An Xuyên, cầu Trắng và cầu Xéo
+                            </a>
+                          </td>
+                          <td>
+                            Thôn 2, xã ABC, huyện XYZ
+                          </td>
+                          <td>
+                            UBND tỉnh Hà Tĩnh
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>
+                            <a href="#">Xây dựng cầu An Mỹ, cầu An Xuyên, cầu Trắng và cầu Xéo
+                            </a>
+                          </td>
+                          <td>
+                            Thôn 2, xã ABC, huyện XYZ
+                          </td>
+                          <td>
+                            UBND tỉnh Hà Tĩnh
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>
+                            <a href="#">Xây dựng cầu An Mỹ, cầu An Xuyên, cầu Trắng và cầu Xéo
+                            </a>
+                          </td>
+                          <td>
+                            Thôn 2, xã ABC, huyện XYZ
+                          </td>
+                          <td>
+                            UBND tỉnh Hà Tĩnh
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>
+                            <a href="#">Xây dựng cầu An Mỹ, cầu An Xuyên, cầu Trắng và cầu Xéo
+                            </a>
+                          </td>
+                          <td>
+                            Thôn 2, xã ABC, huyện XYZ
+                          </td>
+                          <td>
+                            UBND tỉnh Hà Tĩnh
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>
+                            <a href="#">Xây dựng cầu An Mỹ, cầu An Xuyên, cầu Trắng và cầu Xéo
+                            </a>
+                          </td>
+                          <td>
+                            Thôn 2, xã ABC, huyện XYZ
+                          </td>
+                          <td>
+                            UBND tỉnh Hà Tĩnh
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                          <td>
+                            19/07/2019 <span>14:00</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-12 order-1 order-sm-2">
+                  <form class="container-fluid">
+                    <div class="form-search-top">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-search-top__right">
+                            <div class="input-group">
+                              <input id="search-du-an" type="text" class="form-control"
+                                placeholder="Nhập từ khóa (Tên dự án/ Tên nhà đầu tư)">
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-search-top__left">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="form-check w-50">
+                                <label class="form-check form-chkb">Thông báo mời thầu
+                                  <input type="radio" checked="checked" class="form-check-input" name="radio">
+                                  <span class="checkmark form-check-label"></span>
+                                </label>
+                              </div>
+                              <div class="form-check w-50">
+                                <label class="form-check form-chkb">Thông báo mời sơ tuyển
+                                  <input type="radio" checked="checked" class="form-check-input" name="radio">
+                                  <span class="checkmark form-check-label"></span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="form-check w-50">
+                                <label class="form-check form-chkb">Kết quả LC nhà thầu
+                                  <input type="radio" checked="checked" class="form-check-input" name="radio">
+                                  <span class="checkmark form-check-label"></span>
+                                </label>
+                              </div>
+                              <div class="form-check w-50">
+                                <label class="form-check form-chkb">Kết quả sơ tuyển
+                                  <input type="radio" checked="checked" class="form-check-input" name="radio">
+                                  <span class="checkmark form-check-label"></span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group ">
+                            <div class="input-group">
+                              <select class="slc_ct form-control" name="state">
+                                <option value="AL">Cơ quan phê duyệt</option>
+                                <option value="WY">Wyoming</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group ">
+                            <label for="exampleInputEmail1">Thời điểm phát hành HSMT</label>
+                            <div class="row">
+                              <div class="col-sm-6 col-12">
+                                <div class="d-flex align-items-center">
+                                  <label for="" class="m-auto pr-1">Từ</label>
+                                  <input type="text" class="form-control pickadate picker__input" aria-haspopup="true"
+                                    aria-expanded="false">
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-12">
+                                  <div class="d-flex align-items-center">
+                                    <label for="" class="m-auto pr-1">Đến</label>
+                                    <input type="text" class="form-control pickadate picker__input" aria-haspopup="true"
+                                      aria-expanded="false">
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                            <div class="form-group ">
+                              <label for="exampleInputEmail1">Thời điểm đóng thầu</label>
+                              <div class="row">
+                                <div class="col-sm-6 col-12">
+                                  <div class="d-flex align-items-center">
+                                    <label for="" class="m-auto pr-1">Từ</label>
+                                    <input type="text" class="form-control pickadate picker__input" aria-haspopup="true"
+                                      aria-expanded="false">
+                                  </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="d-flex align-items-center">
+                                      <label for="" class="m-auto pr-1">Đến</label>
+                                      <input type="text" class="form-control pickadate picker__input" aria-haspopup="true"
+                                        aria-expanded="false">
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-ban-do-du-an" role="tabpanel" aria-labelledby="pills-ban-do-du-an-tab">
+          ...</div>
+      </div>
+    </section>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./global_assets/js/main/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="./node_modules/select2/dist/js/select2.min.js"></script>
+  <script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+  <script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
+  <script src="./global_assets/js/plugins/pickers/anytime.min.js"></script>
+  <script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+  <script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+  <script src="./global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+  <script src="./global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
+  <script src="./global_assets/js/plugins/notifications/jgrowl.min.js"></script>
+
+  <!-- Theme JS files -->
+  <script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+  <!-- <script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script> -->
+  <script src="./global_assets/js/plugins/tables/datatables/extensions/jszip/jszip.min.js"></script>
+  <!-- <script src="./global_assets/js/plugins/tables/datatables/extensions/pdfmake/vfs_fonts.min.js"></script> -->
+  <script src="./global_assets/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
+
+  <script src="./global_assets/js/demo_pages/datatables_extension_buttons_html5.js"></script>
+  <script>
+    $("#reset-inp").click(function () {
+      $("#search-du-an").val("");
+    });
+    $(".slc_ct").select2({
+      theme: "bootstrap"
+    });
+    $('.picker__input').pickadate({
+      monthsFull: ['Tháng Một', 'Tháng Hai', 'Tháng Ba', 'Tháng Tư', 'Tháng Năm', 'Tháng Sáu', 'Tháng Bảy',
+        'Tháng Tám', 'Tháng Chín', 'Tháng Mười', 'Tháng Mười Một', 'Tháng Mười Hai'
+      ],
+      monthsShort: ['Một', 'Hai', 'Ba', 'Tư', 'Năm', 'Sáu', 'Bảy', 'Tám', 'Chín', 'Mười', 'Mười Một', 'Mười Hai'],
+      weekdaysFull: ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'],
+      weekdaysShort: ['C.N', 'T.2', 'T.3', 'T.4', 'T.5', 'T.6', 'T.7'],
+      today: 'Hôm Nay',
+      clear: 'Xoá',
+      close: 'Đóng',
+      firstDay: 1,
+      format: ' dd/mm/yyyy',
+      formatSubmit: 'yyyy/mm/dd'
+    });
+    jQuery.extend(jQuery.fn.pickatime.defaults, {
+      clear: 'Xoá'
+    });
+  </script>
 </body>
 
 </html>

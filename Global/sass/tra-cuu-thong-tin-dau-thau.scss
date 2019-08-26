@@ -1,0 +1,33 @@
+#pills-tra-cuu-rhong-tin-dau-thau {
+    .form-check {
+        padding-left: 0;
+
+        .form-chkb {
+            padding-left: 35px;
+        }
+    }
+
+    .select2-container--bootstrap .select2-selection--single .select2-selection__arrow {
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        top: 0;
+        width: 10%;
+        background-color: #ccc;
+    }
+
+    .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b {
+        border-color: #999 transparent transparent;
+        border-style: solid;
+        border-width: 4px 4px 0;
+        height: 0;
+        left: 0;
+        margin-left: 0px;
+        margin-top: 0px;
+        position: absolute;
+        top: 50%;
+        width: 0;
+        right: 0;
+        margin: auto;
+    }
+}

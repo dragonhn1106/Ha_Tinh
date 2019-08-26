@@ -1,0 +1,46 @@
+.form-chkb {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .form-chkb input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+    .form-chkb input:checked ~ .checkmark {
+      background-color: #2c84c5; }
+      .form-chkb input:checked ~ .checkmark:after {
+        display: block; }
+  .form-chkb:hover input ~ .checkmark {
+    background-color: #ccc; }
+  .form-chkb .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    /* border-radius: 50%; */ }
+    .form-chkb .checkmark:after {
+      position: absolute;
+      font: 13px/1 'Open Sans', sans-serif;
+      left: 11px;
+      top: 7px;
+      content: '\02143';
+      -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+      transform: rotate(40deg);
+      display: none;
+      color: #ffff; }
+    .form-chkb .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 17px;
+      height: 8px;
+      border-radius: 50%;
+      /* background: white; */ }

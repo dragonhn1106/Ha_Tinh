@@ -1,0 +1,18 @@
+/* ------------------------------------------------------------------------------
+ *
+ *  # Tooltip component
+ *
+ *  Override and extend default tooltip styles.
+ *
+ * ---------------------------------------------------------------------------- */
+.bs-tooltip-top .arrow[class*=border-]:before {
+  border-top-color: inherit; }
+
+.bs-tooltip-right .arrow[class*=border-]:before {
+  border-right-color: inherit; }
+
+.bs-tooltip-bottom .arrow[class*=border-]:before {
+  border-bottom-color: inherit; }
+
+.bs-tooltip-left .arrow[class*=border-]:before {
+  border-left-color: inherit; }
