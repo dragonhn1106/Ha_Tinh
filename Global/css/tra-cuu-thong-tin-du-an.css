@@ -21,7 +21,8 @@
   position: relative; }
   .list-menu-tab .form-search-top .form-search-top__right #search-du-an {
     padding-right: 15%;
-    font-size: 15px; }
+    font-size: 15px;
+    min-height: 48px; }
     .list-menu-tab .form-search-top .form-search-top__right #search-du-an::-webkit-input-placeholder {
       color: #a5c3e2;
       opacity: 1; }
