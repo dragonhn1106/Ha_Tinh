@@ -214,7 +214,7 @@ var IonSlider = function() {
             to: 155,
             prefix: 'HDD: ',
             postfix: ' Gb',
-            values_separator: ' → '
+            values_separator: ' > '
         });
 
         // Remove decoration

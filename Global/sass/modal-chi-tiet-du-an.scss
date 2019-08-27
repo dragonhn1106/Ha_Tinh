@@ -1,0 +1,129 @@
+@import "./font-style.scss";
+
+.modal-ct {
+    z-index: 999999;
+
+    .modal-header {
+        background-color: #23d395;
+        color: #fff;
+
+        button.close {
+            font-size: 30px;
+            color: #fff !important;
+            z-index: 11111;
+        }
+
+        .title {
+            font-size: 20px;
+            font-family: "Roboto-Bold";
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .title-sub {
+            font-size: 14px;
+            font-family: "Roboto-Regular";
+        }
+    }
+
+    .modal-body {
+        .modal-body-center {
+            .modal-body-bottom__main {
+                border-top: 1px solid black;
+                border-bottom: 1px solid #ddd;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                .col-right {
+                    border-right: 1px solid black;
+                }
+
+                .title-top {
+                    font-family: "Roboto-Bold";
+                    font-size: 18px;
+                    color: #1f4e79;
+                }
+
+                .content-main__item--tile {
+                    margin-top: 10px;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    .title {
+                        font-family: "Myriad-Regular";
+                        font-size: 15px;
+                        color: #1f4e79;
+                        font-weight: bold;
+                    }
+
+                    p.content {
+                        margin: 0;
+                        font-size: 15px;
+                        color: #1f4e79;
+                        font-family: "Roboto-Regular";
+                    }
+                }
+
+                .content-main__item--tile__bottom {
+                    font-family: "Roboto-Bold";
+                    font-size: 18px;
+
+                    span {
+                        color: #23d395;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+        .modal-body-bottom {
+            .nav-link {
+                border: 1px solid #fff;
+                color: #1f4e79;
+                background-color: #e5eaf2;
+                border-color: #fff #fff #fff;
+                font-family: "Roboto-Bold";
+                border-radius: 0px;
+            }
+
+            .nav-tabs {
+                border-bottom: 1px solid #1f4e79;
+            }
+
+            .nav-tabs .nav-item.show .nav-link,
+            .nav-tabs .nav-link.active {
+                color: #fff;
+                background-color: #1f4e79;
+                border-color: #dee2e6 #dee2e6 #fff;
+                font-family: "Roboto-Bold";
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .modal-body {
+        .modal-body-center {
+            .modal-body-bottom__main {
+                .col-right {
+                    border-right: 0px;
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    .modal-lg.modal-ct,
+    .modal-xl {
+        max-width: 1000px;
+    }
+}

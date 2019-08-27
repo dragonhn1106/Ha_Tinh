@@ -41,6 +41,11 @@
 				color: #6b6e6f;
 				font-family: "Roboto-Bold";
 				font-size: 18px;
+				@media (max-width: 575.98px) {
+					right: 33%;
+					font-size: 12px;
+					line-height: 48px;
+				}
 			}
 
 			#btn-search {
@@ -51,20 +56,6 @@
 				color: var(--color-white)
 			}
 		}
-
-		// .form-search-top__left {
-		// 	.form-chkb {
-		// 		input {
-		// 			border: 0px;
-
-		// 			&[type="radio"] {
-		// 				-webkit-appearance: checkbox;
-		// 				-moz-appearance: checkbox;
-		// 				-ms-appearance: checkbox;
-		// 			}
-		// 		}
-		// 	}
-		// }
 	}
 
 	ul#pills-tab {
@@ -77,7 +68,10 @@
 				color: #2c84c5;
 				min-width: 385px;
 				min-height: 90px;
-
+				@media (max-width: 575.98px) {
+					min-width: auto;
+					min-height: auto;
+				}
 				.icon-ct {
 					p {
 						font-size: 30px;
@@ -104,3 +98,4 @@
 		}
 	}
 }
+

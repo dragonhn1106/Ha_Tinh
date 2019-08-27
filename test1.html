@@ -8,15 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+        type="text/css">
+    <link href="./global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="./global_assets/js/main/jquery.min.js"></script>
+    <script src="./global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="./global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script src="./global_assets/js/plugins/visualization/echarts/echarts.min.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="col-8">
             <div class="myChart">
-                <canvas id="myChart"></canvas>
+                <canvas id="doughnut-chart" width="800" height="450"></canvas>
             </div>
         </div>
     </div>
@@ -32,62 +48,25 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="./char-js.js"></script>
     <script>
-        var config = {
-            type: 'bar',
+        new Chart(document.getElementById("doughnut-chart"), {
+            type: 'doughnut',
             data: {
-                labels: [
-                    ["January", "First Month", "Jellyfish", "30 of them"],
-                    ["February", "Second Month", "Foxes", "20 of them"],
-                    ["March", "Third Month", "Mosquitoes", "None of them"], "April", "May", "June", "July"
-                ],
+                labels: ["Nông nghiệp, lâm nghiệp, thủy sản", "Y tế và hoạt động trợ giúp xã hội", "Giao thông", "Các ngành khác"],
                 datasets: [{
-                    label: "My First dataset",
-                    data: [65, 40, 80, 81, 56, 85, 45],
-                    backgroundColor: "rgba(255,99,132,0.2)",
-                }, {
-                    label: "My Second dataset",
-                    data: [40, 80, 21, 56, 85, 45, 65],
-                    backgroundColor: "rgba(99,255,132,0.2)",
+                    // label: "Population (millions)",
+                    backgroundColor: ["#1e9cef", "#f95808", "#fbc523", "#22d294"],
+                    data: [2478, 5267, 734, 784]
                 }]
             },
-            scales: {
-                xAxes: [{
-                    gridLines: {
-                        display: false,
-                        lineWidth: 1,
-                        zeroLineWidth: 1,
-                        zeroLineColor: '#666666',
-                        drawTicks: false
-                    },
-                    ticks: {
-                        display: true,
-                        stepSize: 0,
-                        min: 0,
-                        autoSkip: false,
-                        fontSize: 11,
-                        padding: 12
-                    }
-                }],
-                yAxes: [{
-                    ticks: {
-                        padding: 5
-                    },
-                    gridLines: {
-                        display: true,
-                        lineWidth: 1,
-                        zeroLineWidth: 2,
-                        zeroLineColor: '#666666'
-                    }
-                }]
-            },
-            spanGaps: true,
-            responsive: true,
-            maintainAspectRatio: true
-        };
-
-        var ctx = document.getElementById("myChart").getContext("2d");
-        new Chart(ctx, config);
+            options: {
+                legend: {
+                    display: true,
+                    position: 'right'
+                },
+            }
+        });
     </script>
 </body>
 

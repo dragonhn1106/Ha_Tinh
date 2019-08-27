@@ -1,4 +1,5 @@
 @import "./font-style.scss";
+
 * {
   margin: 0px;
   padding: 0px;
@@ -7,7 +8,9 @@
 $fa-font-path: '../assets/fonts';
 @import "~font-awesome/css/font-awesome.css";
 
-
+.select2-container {
+  width: 100%;
+}
 
 :root {
   --color-white: #fff;
@@ -341,10 +344,19 @@ main .content-load-top {
 .panel-content-menu {
   position: relative;
   margin-top: -3%;
+  // margin-bottom: 5%;
+
 
   .tab-content {
     &>.active {
-      margin-bottom: 53px !important;
+      // margin-bottom: 53px !important;
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 5%;
+    }
+
+    @media (max-width: 575.98px) {
+      margin-bottom: 15%;
     }
 
     .form-search {
@@ -422,6 +434,7 @@ main .main-content {
   min-height: 500px;
   background-size: cover;
   margin-top: -53px;
+  padding: 100px 0;
 }
 
 // footer

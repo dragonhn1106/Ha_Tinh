@@ -16,9 +16,9 @@ var DatatableButtonsHtml5 = function () {
         $.extend($.fn.dataTable.defaults, {
             autoWidth: false,
             "pageLength": 5,
-            dom: '<"datatable-scroll-wrap"t><"datatable-footer d-flex justify-content-between align-content-center"lipfB>',
+            dom: '<"datatable-scroll-wrap"t><"datatable-footer d-flex justify-content-between align-items-center pt-2 pb-2"lipfB>',
             language: {
-                lengthMenu: '<span>Số kết quả trên 1 trang:</span> _MENU_',
+                lengthMenu: '<span class="text-center">Số kết quả trên 1 trang:</span> _MENU_',
                 paginate: {
                     'first': 'First',
                     'last': 'Last',

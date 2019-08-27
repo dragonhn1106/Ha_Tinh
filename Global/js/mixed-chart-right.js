@@ -21,7 +21,7 @@ new Chart(document.getElementById("mixed-chart-right"), {
             type: "bar",
             backgroundColor: "#1e9cef",
             backgroundColorHover: "#1e9cef",
-            data: [120, 110, 110, 115, 125],
+            data: [10, 110, 110, 115, 125],
             padding: 10
 
         }]
@@ -47,10 +47,13 @@ new Chart(document.getElementById("mixed-chart-right"), {
                     display: false
                 },
                 ticks: {
-                    max: 200,
+                    max: 150,
                     min: 0,
-                    stepSize: 50,
+                    stepSize: 20,
+                    // stepSize: 0.5,
+                    // max: Math.max.apply(null, [ < %= arrValue % > ]) + 1,
                     
+
                 },
             }, {
                 id: 'B',
