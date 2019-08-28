@@ -12,3 +12,7 @@
 @font-face {
   font-family: "Roboto-Light";
   src: url("../fonts/Roboto/Roboto-Light/fonts/Roboto-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Myriad-Regular";
+  src: url("../fonts/myriad-pro/MyriadPro-Regular/fonts/MYRIADPRO-REGULAR.woff") format("woff"); }
