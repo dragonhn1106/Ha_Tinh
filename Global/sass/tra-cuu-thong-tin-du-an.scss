@@ -42,7 +42,7 @@
 				font-family: "Roboto-Bold";
 				font-size: 18px;
 
-				@media (max-width: 575.98px) {
+				@media (max-width: 768px) {
 					right: 33%;
 					font-size: 12px;
 					line-height: 48px;
@@ -67,10 +67,10 @@
 			#pills-ban-do-du-an-tab {
 				background-color: #dae3f3;
 				color: #2c84c5;
-				min-width: 385px;
-				min-height: 90px;
+				// max-width: 330px;
+				// min-height: 90px;
 
-				@media (max-width: 575.98px) {
+				@media (max-width: 768px) {
 					min-width: auto;
 					min-height: 125px;
 

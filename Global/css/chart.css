@@ -8,18 +8,22 @@
 
 .main-content-chart .chart-fdi-cls { background-color: #ffff !important; border: 1px solid #f95808; color: black !important; width: 80%; }
 
-.main-content-chart .chart-fdi-cls.active { background-color: #f95808 !important; color: #fff !important; border: 1px solid #f95808; }
+.main-content-chart .chart-fdi-cls.active { background-color: #f95808 !important; color: #fff !important; border: 1px solid #f95808; border-bottom-left-radius: 0 !important; border-bottom-right-radius: 0 !important; }
 
 .main-content-chart .chart-fdi-cls.active .icon-change-chart { background-color: #fff; color: #f95808; padding: 5px 20px; border-radius: 10px; }
 
-.main-content-chart .chart-fdi-cls .icon-change-chart { background-color: #f95808; color: #ffff; padding: 5px 20px; border-radius: 10px; }
+.main-content-chart .icon-change-chart { background-color: #f95808; color: #ffff; padding: 5px 20px; border-radius: 10px; }
 
-.main-content-chart .chart-fdi-op { background-color: #ffff !important; border: 1px solid #22d294; color: black !important; width: 80%; }
+@media (max-width: 575.98px) { .main-content-chart .icon-change-chart { padding: 3px 6px; } }
 
-.main-content-chart .chart-fdi-op.active { background-color: #22d294 !important; color: #fff !important; }
+.chart-fdi-op { background-color: #ffff !important; border: 1px solid #22d294; color: black !important; width: 80%; border-top-left-radius: 0 !important; border-top-right-radius: 0 !important; }
 
-.main-content-chart .chart-fdi-op.active .icon-change-chart { background-color: #fff; color: #22d294; padding: 5px 20px; border-radius: 10px; }
+.chart-fdi-op.active { background-color: #22d294 !important; color: #fff !important; }
 
-.main-content-chart .chart-fdi-op .icon-change-chart { background-color: #22d294; color: #ffff; padding: 5px 20px; border-radius: 10px; }
+.chart-fdi-op.active .icon-change-chart { background-color: #fff; color: #22d294; padding: 5px 20px; border-radius: 10px; }
 
-.main-content-chart #v-pills-tabContent .title { font-size: 16px; font-family: "Roboto-Bold"; color: #1f4e79; }
+.chart-fdi-op .icon-change-chart { background-color: #22d294; color: #ffff; padding: 5px 20px; border-radius: 10px; }
+
+@media (max-width: 575.98px) { .chart-fdi-op .icon-change-chart { padding: 3px 6px; } }
+
+#v-pills-tabContent .title { font-size: 16px; font-family: "Roboto-Bold"; color: #1f4e79; }
