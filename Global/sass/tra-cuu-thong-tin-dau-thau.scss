@@ -1,5 +1,6 @@
 @import './tra-cuu-thong-tin-du-an.scss';
 @import "./font-style.scss";
+
 #pills-tra-cuu-rhong-tin-dau-thau {
     .form-check {
         padding-left: 0;
@@ -33,6 +34,7 @@
         margin: auto;
     }
 }
+
 @media (max-width: 575.98px) {
     .modal-body {
         .modal-body-center {

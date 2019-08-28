@@ -346,6 +346,8 @@ footer .footer-bottom ul li.dang-nhap a::after {
   bottom: 0; }
 
 @media (max-width: 575.98px) {
+  .w-mb-100 {
+    width: 100% !important; }
   .content-load-top::after {
     content: '';
     width: 0px !important; }

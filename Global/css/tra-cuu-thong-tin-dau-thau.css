@@ -79,7 +79,11 @@
     .list-menu-tab ul#pills-tab .nav-item #pills-tra-cuu-rhong-tin-dau-thau-tab,
     .list-menu-tab ul#pills-tab .nav-item #pills-ban-do-du-an-tab {
       min-width: auto;
-      min-height: auto; } }
+      min-height: 125px; }
+      .list-menu-tab ul#pills-tab .nav-item #pills-tra-cu-thong-tin-du-an-tab .title,
+      .list-menu-tab ul#pills-tab .nav-item #pills-tra-cuu-rhong-tin-dau-thau-tab .title,
+      .list-menu-tab ul#pills-tab .nav-item #pills-ban-do-du-an-tab .title {
+        text-align: center; } }
   .list-menu-tab ul#pills-tab .nav-item #pills-tra-cu-thong-tin-du-an-tab .icon-ct p,
   .list-menu-tab ul#pills-tab .nav-item #pills-tra-cuu-rhong-tin-dau-thau-tab .icon-ct p,
   .list-menu-tab ul#pills-tab .nav-item #pills-ban-do-du-an-tab .icon-ct p {
