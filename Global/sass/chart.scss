@@ -19,8 +19,11 @@
             .icon-change-chart {
                 background-color: #fff;
                 color: #f95808;
-                padding: 5px 20px;
+                padding: 5px 12px;
                 border-radius: 10px;
+                @media (max-width: 768px) {
+                    padding: 3px 6px;
+                }
 
             }
 
@@ -30,7 +33,7 @@
     .icon-change-chart {
         background-color: #f95808;
         color: #ffff;
-        padding: 5px 20px;
+        padding: 5px 12px;
 
         border-radius: 10px;
 
@@ -55,15 +58,18 @@
         .icon-change-chart {
             background-color: #fff;
             color: #22d294;
-            padding: 5px 20px;
+            padding: 5px 12px;
             border-radius: 10px;
+            @media (max-width: 768px) {
+                padding: 3px 6px;
+            }
         }
     }
 
     .icon-change-chart {
         background-color: #22d294;
         color: #ffff;
-        padding: 5px 20px;
+        padding: 5px 12px;
         border-radius: 10px;
 
         @media (max-width: 768px) {
@@ -77,5 +83,12 @@
         font-size: 16px;
         font-family: "Roboto-Bold";
         color: #1f4e79;
+    }
+    .chart-mt{
+        @media (max-width: 768px) {
+           padding-top: 10px;
+           margin-top: 10px;
+           margin-bottom: 10px;
+        }
     }
 }

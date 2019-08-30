@@ -13,6 +13,10 @@
   font-family: "Roboto-Light";
   src: url("../fonts/Roboto/Roboto-Light/fonts/Roboto-Light.woff") format("woff"); }
 
+@font-face {
+  font-family: "Myriad-Regular";
+  src: url("../fonts/myriad-pro/MyriadPro-Regular/fonts/MYRIADPRO-REGULAR.woff") format("woff"); }
+
 :root {
   --color-blue: #2c84c5;
   --color-white: #fff; }
@@ -45,12 +49,17 @@
     bottom: 0;
     right: 15%;
     margin: auto;
-    line-height: 38px;
+    line-height: 48px;
     z-index: 11111;
     text-decoration: underline;
     color: #6b6e6f;
     font-family: "Roboto-Bold";
     font-size: 18px; }
+    @media (max-width: 768px) {
+      .list-menu-tab .form-search-top .form-search-top__right #reset-inp {
+        right: 33%;
+        font-size: 12px;
+        line-height: 48px; } }
   .list-menu-tab .form-search-top .form-search-top__right #btn-search {
     padding: 0 20px;
     border: 0px;
@@ -62,9 +71,17 @@
 .list-menu-tab ul#pills-tab .nav-item #pills-tra-cuu-rhong-tin-dau-thau-tab,
 .list-menu-tab ul#pills-tab .nav-item #pills-ban-do-du-an-tab {
   background-color: #dae3f3;
-  color: #2c84c5;
-  /* min-width: 385px; */
-  min-height: 90px; }
+  color: #2c84c5; }
+  @media (max-width: 768px) {
+    .list-menu-tab ul#pills-tab .nav-item #pills-tra-cu-thong-tin-du-an-tab,
+    .list-menu-tab ul#pills-tab .nav-item #pills-tra-cuu-rhong-tin-dau-thau-tab,
+    .list-menu-tab ul#pills-tab .nav-item #pills-ban-do-du-an-tab {
+      min-width: auto;
+      min-height: 125px; }
+      .list-menu-tab ul#pills-tab .nav-item #pills-tra-cu-thong-tin-du-an-tab .title,
+      .list-menu-tab ul#pills-tab .nav-item #pills-tra-cuu-rhong-tin-dau-thau-tab .title,
+      .list-menu-tab ul#pills-tab .nav-item #pills-ban-do-du-an-tab .title {
+        text-align: center; } }
   .list-menu-tab ul#pills-tab .nav-item #pills-tra-cu-thong-tin-du-an-tab .icon-ct p,
   .list-menu-tab ul#pills-tab .nav-item #pills-tra-cuu-rhong-tin-dau-thau-tab .icon-ct p,
   .list-menu-tab ul#pills-tab .nav-item #pills-ban-do-du-an-tab .icon-ct p {

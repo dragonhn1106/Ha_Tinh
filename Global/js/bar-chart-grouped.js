@@ -47,7 +47,7 @@ new Chart(document.getElementById("bar-chart-grouped"), {
                 },
                 ticks: {
                     display: true,
-                    fontSize: 11,
+                    fontSize: 9,
                     padding: 12,
                     fontColor: "#1f4e79",
                 },

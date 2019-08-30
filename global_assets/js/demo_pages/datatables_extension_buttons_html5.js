@@ -43,7 +43,7 @@ var DatatableButtonsHtml5 = function () {
                     // {extend: 'xxxxx'},
                     {
                         extend: 'excelHtml5',
-                        text: '<div class="d-flex"><p class="m-0"><i class="fas fa-download"></i></p>Tải xuống danh sách</div>',
+                        text: '<div class="d-flex justify-content-center flex-sm-nowrap flex-wrap"><p class="m-0"><i class="fas fa-download"></i></p>Tải xuống danh sách</div>',
                     },
                 ]
             }

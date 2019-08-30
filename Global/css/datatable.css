@@ -446,7 +446,8 @@
 }
 
 .card-body>.dataTables_wrapper .datatable-footer {
-    border-top: 0
+    border-top: 0;
+    margin-bottom: 70px;
 }
 
 .card-body>.dataTables_wrapper .datatable-footer .dataTables_filter,
@@ -508,6 +509,9 @@
     .datatable-scroll-sm td,
     .datatable-scroll-sm th {
         white-space: nowrap
+    }
+    .datatable-footer{
+        margin-bottom: 80px;
     }
 }
 

@@ -80,7 +80,7 @@
     border-color: #dee2e6 #dee2e6 #fff;
     font-family: "Roboto-Bold"; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
   .modal-body .modal-body-center .modal-body-bottom__main .col-right {
     border-right: 0px; } }
 

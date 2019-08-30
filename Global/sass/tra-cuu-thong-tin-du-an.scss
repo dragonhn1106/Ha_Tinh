@@ -7,6 +7,7 @@
 
 .list-menu-tab {
 	.form-search-top {
+
 		.form-search-top__right {
 			position: relative;
 
@@ -33,9 +34,9 @@
 				position: absolute;
 				top: 0;
 				bottom: 0;
-				right: 15%;
+				right: 16%;
 				margin: auto;
-				line-height: 38px;
+				line-height: 48px;
 				z-index: 11111;
 				text-decoration: underline;
 				color: #6b6e6f;
@@ -54,8 +55,41 @@
 				border: 0px;
 				font-family: "Roboto-Bold";
 				background-color: var(--color-blue);
-				color: var(--color-white)
+				color: var(--color-white);
+				border-radius: 0px;
 			}
+		}
+	}
+
+	.form-search-bottom {
+		.input-select2 {
+			position: relative;
+
+			.icon-down-slect2 {
+				position: absolute;
+				right: 0;
+				top: 0;
+				margin: auto;
+				line-height: 34px;
+				width: 30px	;
+				background-color: #b4b4b4;
+				border-radius: 4px;
+			}
+		}
+
+		.slc_ct {
+			z-index: 11111;
+			// -webkit-appearance: none;
+			// -moz-appearance: none;
+			// -o-appearance: none;
+
+		}
+
+		.select2-selection__arrow {
+			b{
+				display: none;
+			}
+			// display: none;
 		}
 	}
 

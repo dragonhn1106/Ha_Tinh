@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Trang Chủ</title>
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="./node_modules/owl.carousel2/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./node_modules/owl.carousel2/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./Global/css/style.css">
@@ -25,6 +24,7 @@
   <link rel="stylesheet" href="./node_modules/owl.carousel2/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./node_modules/owl.carousel2/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./Global/css/chart.css">
+  <link rel="stylesheet" href="./Global/css/style-ie.css">
 </head>
 
 <body>
@@ -33,18 +33,27 @@
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-lg navbar-light nav-ct">
-            <a class="navbar-brand" href="#"><img src="./Global/images/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex justify-content-between align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="./Global/images/logo.png" alt="">
+              </a>
+              <p class="m-auto text-white font-weight-bold d-sm-none d-block">
+                Hệ thống quản lý dự án đầu tư trên địa bàn tỉnh Hà Tĩnh
+              </p>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
                   <div class="d-flex flex-column">
-                    <p class="address_name_headquarters">Sở kế hoạch và đầu tư</p>
-                    <p class="name_project">Hệ thống quản lý dự án đầu tư của doanh nghiệp, hợp tác xã và các tổ chức,
+                    <p class="address_name_headquarters d-sm-block d-none">Sở kế hoạch và đầu tư</p>
+                    <p class="name_project d-sm-block d-none">Hệ thống quản lý dự án đầu tư của doanh nghiệp, hợp tác xã
+                      và các tổ chức,
                       cá nhân khác trên địa bàn tỉnh Hà Tĩnh</p>
                   </div>
                 </li>
@@ -69,11 +78,16 @@
         <section class="main-top">
           <div class="container-fluid">
             <div class="row">
+              <div class="col-12">
+                <p class="text-uppercase text-center title">TỔNG SỐ DỰ ÁN ĐẦU TƯ TRÊN ĐỊA BÀN TỈNH HÀ TĨNH</p>
+              </div>
+            </div>
+            <div class="row">
               <div class="col">
                 <div class="owl-carousel owl-theme" id="slider-main-top">
                   <div class="item">
                     <div class="text-center luy-ke-thang">
-                      <p class="title ">
+                      <p class="title text-uppercase">
                         Lũy kế đến tháng <span>5/2019</span>
                       </p>
                       <div class="row">
@@ -209,7 +223,7 @@
                   </div>
                   <div class="item">
                     <div class="col-12 text-center luy-ke-tong-nam">
-                      <p class="title">
+                      <p class="title text-uppercase">
                         LŨY KẾ TỪ ĐẦU NĂM ĐẾN THÁNG 5/2019
                       </p>
                       <div class="row">
@@ -218,7 +232,7 @@
                             <p class="fa fa-list" aria-hidden="true" style="font-size: 25px"></p>
                           </div>
                           <p class="tong-so-du-an d-flex justify-content-center align-items-center">Tổng số dự án
-                            &nbsp;<span class="number">64%</span><span class="ty-le-tang text-shadow ml-1">2%&nbsp;<span
+                            &nbsp;<span class="number">64</span><span class="ty-le-tang text-shadow ml-1">2%&nbsp;<span
                                 class="text-shadow"><i class="fas fa-arrow-up text-shadow"></i></span></span></p>
                           <div class="row line-center">
                             <div class="col-sm-4 col-6 text-sm-right text-center ml-auto col-tong-so-du-an pb-2">
@@ -380,6 +394,11 @@
                               </div>
                             </div>
                           </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <p>(Tỷ lệ tăng, giảm so với cùng kỳ năm trước)</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
@@ -393,13 +412,13 @@
       </div>
       <!-- panel list-menu -->
       <section class="panel-content-menu">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-12">
               <section class="list-menu-tab ">
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                  <li class="nav-item m-auto" style="width:27%;">
-                    <a class="nav-link" id="pills-tra-cu-thong-tin-du-an-tab" data-toggle="pill"
+                  <li class="nav-item m-auto" style="width:33%;">
+                    <a class="nav-link active" id="pills-tra-cu-thong-tin-du-an-tab" data-toggle="pill"
                       href="#pills-tra-cu-thong-tin-du-an" role="tab" aria-controls="pills-tra-cu-thong-tin-du-an"
                       aria-selected="true">
                       <div class="d-flex flex-sm-nowrap flex-wrap justify-content-start align-content-center">
@@ -419,7 +438,7 @@
                       </div>
                     </a>
                   </li>
-                  <li class="nav-item m-auto" style="width:27%;">
+                  <li class="nav-item m-auto" style="width:33%;">
                     <a class="nav-link" id="pills-tra-cuu-rhong-tin-dau-thau-tab" data-toggle="pill"
                       href="#pills-tra-cuu-rhong-tin-dau-thau" role="tab"
                       aria-controls="pills-tra-cuu-rhong-tin-dau-thau" aria-selected="false">
@@ -440,7 +459,7 @@
                       </div>
                     </a>
                   </li>
-                  <li class="nav-item m-auto" style="width:27%;">
+                  <li class="nav-item m-auto" style="width:30%;">
                     <a class="nav-link" id="pills-ban-do-du-an-tab" data-toggle="pill" href="#pills-ban-do-du-an"
                       role="tab" aria-controls="pills-ban-do-du-an" aria-selected="false">
                       <div class="d-flex flex-sm-nowrap flex-wrap justify-content-start align-items-center">
@@ -507,36 +526,72 @@
                               <div class="row">
                                 <div class="col-sm-6 col-12">
                                   <div class="d-flex justify-content-between align-content-center">
-                                    <select class="slc_ct form-control" name="state">
-                                      <option value="AL">Cơ quan phê duyệt</option>
-                                      <option value="WY">Wyoming</option>
-                                    </select>
-                                    <select class="slc_ct form-control" name="state">
-                                      <option value="AL">Địa điểm thực hiện</option>
-                                    </select>
+                                    <div
+                                      class="w-50 mr-2 d-flex justify-content-center align-items-center input-select2">
+                                      <select class="slc_ct form-control w-50 mr-2 p-0" name="state">
+                                        <option value="AL">Cơ quan phê duyệt</option>
+                                      </select>
+                                      <div class="icon-down-slect2">
+                                        <i class="fas fa-chevron-down text-white"></i>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="w-50 mr-2 d-flex justify-content-center align-items-center input-select2">
+                                      <select class="slc_ct form-control w-50 mr-2 p-0" name="state">
+                                        <option value="AL">Địa điểm thực hiện</option>
+                                      </select>
+                                      <div class="icon-down-slect2">
+                                        <i class="fas fa-chevron-down text-white"></i>
+                                      </div>
+                                    </div>
                                   </div>
                                   <div class="d-flex justify-content-between align-content-center mt-2">
-                                    <select class="slc_ct form-control" name="state">
-                                      <option value="AL">Cơ quan phê duyệt</option>
-                                      <option value="WY">Wyoming</option>
-                                    </select>
-                                    <select class="slc_ct form-control" name="state">
-                                      <option value="AL">Địa điểm thực hiện</option>
-                                    </select>
+                                    <div
+                                      class="w-50 mr-2 d-flex justify-content-center align-items-center input-select2">
+                                      <select class="slc_ct form-control w-50 mr-2 p-0" name="state">
+                                        <option value="AL">Nhóm nghành</option>
+                                      </select>
+                                      <div class="icon-down-slect2">
+                                        <i class="fas fa-chevron-down text-white"></i>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="w-50 mr-2 d-flex justify-content-center align-items-center input-select2">
+                                      <select class="slc_ct form-control w-50 mr-2 p-0" name="state">
+                                        <option value="AL">Trạng thái dự án</option>
+                                      </select>
+                                      <div class="icon-down-slect2">
+                                        <i class="fas fa-chevron-down text-white"></i>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
-                                <div class="col-sm-6 col-12 mt-2">
+                                <div class="col-sm-6 col-12">
                                   <div class="form-group">
-                                    <div class="d-flex flex-column align-items-center justify-content-start">
+                                    <div class="d-flex flex-column align-items-start justify-content-start">
                                       <div class="w-100">
                                         <label for="exampleInputEmail1">Thời gian hoạt động</label>
                                       </div>
-                                      <div class="input-group">
-                                        <span class="input-group-prepend">
-                                          <span class="input-group-text"><i class="icon-calendar22"></i></span>
-                                        </span>
-                                        <input type="text" class="form-control daterange-basic"
-                                          value="01/01/2015 - 01/31/2015">
+                                      <div class="d-flex">
+                                        <div class="d-flex align-items-center w-50 mr-2">
+                                          <label class="mr-1 m-0">Từ</label>
+                                          <div class="input-group">
+
+                                            <input type="text" class="form-control pickadate picker__input" value="">
+                                            <span class="input-group-prepend">
+                                              <span class="input-group-text"><i class="icon-calendar22"></i></span>
+                                            </span>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-center w-50">
+                                          <label class="mr-1 m-0">Đến</label>
+                                          <div class="input-group">
+                                            <input type="text" class="form-control pickadate picker__input" value="">
+                                            <span class="input-group-prepend">
+                                              <span class="input-group-text"><i class="icon-calendar22"></i></span>
+                                            </span>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -562,332 +617,326 @@
                           </div>
                         </div>
                         <div class="main-content__XX">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="table-responsive">
-                                  <table class="table table-bordered datatable-button-html5-basic">
-                                    <thead>
-                                      <tr>
-                                        <th>STT</th>
-                                        <th class="w-20">Tên dự án</th>
-                                        <th>Tên nhà đầu tư</th>
-                                        <th>Cơ quan phê duyệt</th>
-                                        <th class="w-10">Địa điểm thực hiện</th>
-                                        <th class="">Nhóm nghành</th>
-                                        <th class="w-10">Trạng thái dự án</th>
-                                        <th>Thời gian hoạt động</th>
-                                        <th>Tổng vốn đầu tư</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>1</td>
-                                        <td>
-                                          <a href="#" data-toggle="modal" data-target="#exampleModal">Xây dựng nhà máy
-                                            điện
-                                            mặt trời tại xã ABC, huyện XYZ
-                                          </a>
-                                        </td>
-                                        <td>
-                                          Công ty cổ phần ABC
-                                        </td>
-                                        <td>
-                                          UBDN huyên XYZ
-                                        </td>
-                                        <td>
-                                          Thôn 2, xã ABC, huyện XYZ
-                                        </td>
-                                        <td>
-                                          Năng lượng
-                                        </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                        <td>
-                                          <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
-                                            sản
-                                            xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
-                                          </a>
-                                        </td>
-                                        <td>Công ty cổ phần Một hai ba</td>
-                                        <td>Bộ Giao thông vận tải</td>
-                                        <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
-                                        <td>Tài nguyên môi trường </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>3</td>
-                                        <td>
-                                          <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
-                                          </a>
-                                        </td>
-                                        <td>
-                                          Công ty cổ phần ABC
-                                        </td>
-                                        <td>
-                                          UBDN huyên XYZ
-                                        </td>
-                                        <td>
-                                          Thôn 2, xã ABC, huyện XYZ
-                                        </td>
-                                        <td>
-                                          Năng lượng
-                                        </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>4</td>
-                                        <td>
-                                          <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
-                                            sản
-                                            xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
-                                          </a>
-                                        </td>
-                                        <td>Công ty cổ phần Một hai ba</td>
-                                        <td>Bộ Giao thông vận tải</td>
-                                        <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
-                                        <td>Tài nguyên môi trường </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>5</td>
-                                        <td>
-                                          <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
-                                          </a>
-                                        </td>
-                                        <td>
-                                          Công ty cổ phần ABC
-                                        </td>
-                                        <td>
-                                          UBDN huyên XYZ
-                                        </td>
-                                        <td>
-                                          Thôn 2, xã ABC, huyện XYZ
-                                        </td>
-                                        <td>
-                                          Năng lượng
-                                        </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>6</td>
-                                        <td>
-                                          <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
-                                            sản
-                                            xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
-                                          </a>
-                                        </td>
-                                        <td>Công ty cổ phần Một hai ba</td>
-                                        <td>Bộ Giao thông vận tải</td>
-                                        <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
-                                        <td>Tài nguyên môi trường </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>7</td>
-                                        <td>
-                                          <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
-                                          </a>
-                                        </td>
-                                        <td>
-                                          Công ty cổ phần ABC
-                                        </td>
-                                        <td>
-                                          UBDN huyên XYZ
-                                        </td>
-                                        <td>
-                                          Thôn 2, xã ABC, huyện XYZ
-                                        </td>
-                                        <td>
-                                          Năng lượng
-                                        </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>8</td>
-                                        <td>
-                                          <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
-                                            sản
-                                            xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
-                                          </a>
-                                        </td>
-                                        <td>Công ty cổ phần Một hai ba</td>
-                                        <td>Bộ Giao thông vận tải</td>
-                                        <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
-                                        <td>Tài nguyên môi trường </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>9</td>
-                                        <td>
-                                          <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
-                                          </a>
-                                        </td>
-                                        <td>
-                                          Công ty cổ phần ABC
-                                        </td>
-                                        <td>
-                                          UBDN huyên XYZ
-                                        </td>
-                                        <td>
-                                          Thôn 2, xã ABC, huyện XYZ
-                                        </td>
-                                        <td>
-                                          Năng lượng
-                                        </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>10</td>
-                                        <td>
-                                          <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
-                                            sản
-                                            xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
-                                          </a>
-                                        </td>
-                                        <td>Công ty cổ phần Một hai ba</td>
-                                        <td>Bộ Giao thông vận tải</td>
-                                        <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
-                                        <td>Tài nguyên môi trường </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>11</td>
-                                        <td>
-                                          <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
-                                          </a>
-                                        </td>
-                                        <td>
-                                          Công ty cổ phần ABC
-                                        </td>
-                                        <td>
-                                          UBDN huyên XYZ
-                                        </td>
-                                        <td>
-                                          Thôn 2, xã ABC, huyện XYZ
-                                        </td>
-                                        <td>
-                                          Năng lượng
-                                        </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>12</td>
-                                        <td>
-                                          <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
-                                            sản
-                                            xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
-                                          </a>
-                                        </td>
-                                        <td>Công ty cổ phần Một hai ba</td>
-                                        <td>Bộ Giao thông vận tải</td>
-                                        <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
-                                        <td>Tài nguyên môi trường </td>
-                                        <td>
-                                          Đã hoàn thành
-                                        </td>
-                                        <td>
-                                          2017-2067
-                                        </td>
-                                        <td>
-                                          567 tỷ VNĐ
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </div>
-                            </div>
+                          <div class="table-responsive">
+                            <table class="table table-bordered datatable-button-html5-basic">
+                              <thead>
+                                <tr>
+                                  <th>STT</th>
+                                  <th class="w-20">Tên dự án</th>
+                                  <th>Tên nhà đầu tư</th>
+                                  <th>Cơ quan phê duyệt</th>
+                                  <th class="w-10">Địa điểm thực hiện</th>
+                                  <th class="">Nhóm nghành</th>
+                                  <th class="w-10">Trạng thái dự án</th>
+                                  <th>Thời gian hoạt động</th>
+                                  <th>Tổng vốn đầu tư</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">Xây dựng nhà máy
+                                      điện
+                                      mặt trời tại xã ABC, huyện XYZ
+                                    </a>
+                                  </td>
+                                  <td>
+                                    Công ty cổ phần ABC
+                                  </td>
+                                  <td>
+                                    UBDN huyên XYZ
+                                  </td>
+                                  <td>
+                                    Thôn 2, xã ABC, huyện XYZ
+                                  </td>
+                                  <td>
+                                    Năng lượng
+                                  </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>
+                                    <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
+                                      sản
+                                      xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                    </a>
+                                  </td>
+                                  <td>Công ty cổ phần Một hai ba</td>
+                                  <td>Bộ Giao thông vận tải</td>
+                                  <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                                  <td>Tài nguyên môi trường </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>
+                                    <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                    </a>
+                                  </td>
+                                  <td>
+                                    Công ty cổ phần ABC
+                                  </td>
+                                  <td>
+                                    UBDN huyên XYZ
+                                  </td>
+                                  <td>
+                                    Thôn 2, xã ABC, huyện XYZ
+                                  </td>
+                                  <td>
+                                    Năng lượng
+                                  </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>
+                                    <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
+                                      sản
+                                      xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                    </a>
+                                  </td>
+                                  <td>Công ty cổ phần Một hai ba</td>
+                                  <td>Bộ Giao thông vận tải</td>
+                                  <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                                  <td>Tài nguyên môi trường </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>5</td>
+                                  <td>
+                                    <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                    </a>
+                                  </td>
+                                  <td>
+                                    Công ty cổ phần ABC
+                                  </td>
+                                  <td>
+                                    UBDN huyên XYZ
+                                  </td>
+                                  <td>
+                                    Thôn 2, xã ABC, huyện XYZ
+                                  </td>
+                                  <td>
+                                    Năng lượng
+                                  </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>6</td>
+                                  <td>
+                                    <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
+                                      sản
+                                      xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                    </a>
+                                  </td>
+                                  <td>Công ty cổ phần Một hai ba</td>
+                                  <td>Bộ Giao thông vận tải</td>
+                                  <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                                  <td>Tài nguyên môi trường </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>7</td>
+                                  <td>
+                                    <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                    </a>
+                                  </td>
+                                  <td>
+                                    Công ty cổ phần ABC
+                                  </td>
+                                  <td>
+                                    UBDN huyên XYZ
+                                  </td>
+                                  <td>
+                                    Thôn 2, xã ABC, huyện XYZ
+                                  </td>
+                                  <td>
+                                    Năng lượng
+                                  </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>8</td>
+                                  <td>
+                                    <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
+                                      sản
+                                      xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                    </a>
+                                  </td>
+                                  <td>Công ty cổ phần Một hai ba</td>
+                                  <td>Bộ Giao thông vận tải</td>
+                                  <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                                  <td>Tài nguyên môi trường </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>9</td>
+                                  <td>
+                                    <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                    </a>
+                                  </td>
+                                  <td>
+                                    Công ty cổ phần ABC
+                                  </td>
+                                  <td>
+                                    UBDN huyên XYZ
+                                  </td>
+                                  <td>
+                                    Thôn 2, xã ABC, huyện XYZ
+                                  </td>
+                                  <td>
+                                    Năng lượng
+                                  </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>10</td>
+                                  <td>
+                                    <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
+                                      sản
+                                      xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                    </a>
+                                  </td>
+                                  <td>Công ty cổ phần Một hai ba</td>
+                                  <td>Bộ Giao thông vận tải</td>
+                                  <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                                  <td>Tài nguyên môi trường </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>11</td>
+                                  <td>
+                                    <a href="#">Xây dựng nhà máy điện mặt trời tại xã ABC, huyện XYZ
+                                    </a>
+                                  </td>
+                                  <td>
+                                    Công ty cổ phần ABC
+                                  </td>
+                                  <td>
+                                    UBDN huyên XYZ
+                                  </td>
+                                  <td>
+                                    Thôn 2, xã ABC, huyện XYZ
+                                  </td>
+                                  <td>
+                                    Năng lượng
+                                  </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>12</td>
+                                  <td>
+                                    <a href="#">Đầu tư xây dựng hệ thống đường giao thông (đường vào) Trung tâm
+                                      sản
+                                      xuất giống Tràng Bảng thuộc Viện Nghiên cứu Dầu và Cây có dầu
+                                    </a>
+                                  </td>
+                                  <td>Công ty cổ phần Một hai ba</td>
+                                  <td>Bộ Giao thông vận tải</td>
+                                  <td>Đường dân sinh thôn Minh Vương, xã Hùng Thái, Huyện XYZ</td>
+                                  <td>Tài nguyên môi trường </td>
+                                  <td>
+                                    Đã hoàn thành
+                                  </td>
+                                  <td>
+                                    2017-2067
+                                  </td>
+                                  <td>
+                                    567 tỷ VNĐ
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
                         </div>
 
@@ -1052,25 +1101,27 @@
                                       </label>
                                     </div>
                                     <div class="form-check w-50">
-                                      <label class="form-check form-chkb">Thông báo mời sơ tuyển
+                                      <label class="form-check form-chkb">Kết quả LC nhà thầu
                                         <input type="radio" checked="checked" class="form-check-input" name="radio">
                                         <span class="checkmark form-check-label"></span>
                                       </label>
                                     </div>
                                   </div>
                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="form-check w-50">
-                                      <label class="form-check form-chkb">Kết quả LC nhà thầu
-                                        <input type="radio" checked="checked" class="form-check-input" name="radio">
-                                        <span class="checkmark form-check-label"></span>
-                                      </label>
-                                    </div>
+
                                     <div class="form-check w-50">
                                       <label class="form-check form-chkb">Kết quả sơ tuyển
                                         <input type="radio" checked="checked" class="form-check-input" name="radio">
                                         <span class="checkmark form-check-label"></span>
                                       </label>
                                     </div>
+                                    <div class="form-check w-50">
+                                      <label class="form-check form-chkb">Thông báo mời sơ tuyển
+                                        <input type="radio" checked="checked" class="form-check-input" name="radio">
+                                        <span class="checkmark form-check-label"></span>
+                                      </label>
+                                    </div>
+
                                   </div>
                                 </div>
                                 <div class="row">
@@ -1152,7 +1203,7 @@
                 </div>
               </section>
               <!-- modal -->
-              <div class="modal fade p-2 bd-example-modal-lg modal-ct" id="exampleModal" tabindex="-1" role="dialog"
+              <div class="modal fade  p-2 bd-example-modal-lg modal-ct" id="exampleModal" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg modal-ct" role="document">
                   <div class="modal-content">
@@ -1351,7 +1402,7 @@
                               <ul class="nav nav-tabs d-flex flex-sm-nowrap dlex-wrap text-center" id="myTab"
                                 role="tablist">
                                 <li class="nav-item w-15">
-                                  <a class="nav-link active" id="muc-tieu-du-an-tab" data-toggle="tab"
+                                  <a class="nav-link" id="muc-tieu-du-an-tab" data-toggle="tab"
                                     href="#muc-tieu-du-an" role="tab" aria-controls="muc-tieu-du-an"
                                     aria-selected="true">Mục tiêu dự án</a>
                                 </li>
@@ -1657,10 +1708,11 @@
       <!-- end panel list menu -->
     </div>
     <section class="main-content main-content-chart">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-1 m-auto">
-            <div class="nav flex-column nav-pills nav-ct" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <div class="col-sm-1 col-12 m-auto">
+            <div class="nav flex-sm-column flex-nowrap nav-pills nav-ct" id="v-pills-tab" role="tablist"
+              aria-orientation="vertical">
               <a class="nav-link active chart-fdi-cls" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
                 role="tab" aria-controls="v-pills-home" aria-selected="true">
                 <div class="d-flex flex-column justify-content-center align-items-center">
@@ -1677,7 +1729,7 @@
               </a>
             </div>
           </div>
-          <div class="col-11">
+          <div class="col-sm-11 col-12">
             <div class="tab-content" id="v-pills-tabContent">
               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                 aria-labelledby="v-pills-home-tab">
@@ -1685,8 +1737,9 @@
                   <div class="row">
                     <div class="col-sm-4 col-12">
                       <div class="h-100 ">
-                        <div class="col-items p-2 h-100 d-flex justify-content-between align-items-center flex-column"
-                          style="border-radius: 10px; background-color: #ddd">
+                        <div
+                          class="col-items p-2 chart-mt h-100 d-flex justify-content-between align-items-center flex-column"
+                          style="border-radius: 10px; background-color: #ffffff5e">
                           <div class="d-flex justify-content-between align-items-center mb-4">
                             <p class="w-75 m-0 title">Tình hình thực hiện dự án đầu tư trên địa bàn tỉnh hàng năm</p>
                             <p class="fas fa-bars"></p>
@@ -1698,16 +1751,16 @@
                     <div class="col-sm-8 col-12">
                       <div class="row mb-4">
                         <div class="col-sm-6 col-12">
-                          <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd">
+                          <div class="col-items p-2 chart-mt" style="border-radius: 10px; background-color: #ffffff5e">
                             <div class="d-flex justify-content-between align-content-center mb-4">
                               <p class="w-75 m-0 title">Phổ tổng vốn đầu tư và tổng số dự án</p>
                               <p class="fas fa-bars"></p>
                             </div>
-                            <canvas id="bar-chart-top-left" class="" width="100%" height="60%"></canvas>
+                            <canvas id="bar-chart-top-left" width="100%" height="60%"></canvas>
                           </div>
                         </div>
                         <div class="col-sm-6 col-12">
-                          <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd">
+                          <div class="col-items p-2 chart-mt" style="border-radius: 10px; background-color: #ffffff5e">
                             <div class="d-flex justify-content-between align-content-center mb-4">
                               <p class="w-75 m-0 title">Các lĩnh vực thu hút vốn đầu tư lớn nhất</p>
                               <p class="fas fa-bars"></p>
@@ -1720,7 +1773,7 @@
                       </div>
                       <div class="row">
                         <div class="col-12">
-                          <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd">
+                          <div class="col-items p-2 chart-mt" style="border-radius: 10px; background-color: #ffffff5e">
                             <div class="d-flex justify-content-between align-content-center mb-4">
                               <p class="w-50 m-0 title">Tình hình thực hiện dự án đầu tư tại các địa phương</p>
                               <p class="fas fa-bars"></p>
@@ -1739,8 +1792,8 @@
                 <div class="container">
                   <div class="row mb-4">
                     <div class="col-sm-4 col-12">
-                      <div class="col-items p-2 d-flex justify-content-center flex-column   "
-                        style="border-radius: 10px; background-color: #ddd;">
+                      <div class="col-items p-2 chart-mt d-flex justify-content-center flex-column   "
+                        style="border-radius: 10px; background-color: #ffffff5e;">
                         <div class="d-flex justify-content-between align-content-center mb-4">
                           <p class="w-75 m-0 title">Tình hình thực hiện dự án đầu tư trên địa bàn tỉnh hàng năm</p>
                           <p class="fas fa-bars"></p>
@@ -1749,7 +1802,7 @@
                       </div>
                     </div>
                     <div class="col-sm-4 col-12">
-                      <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd">
+                      <div class="col-items p-2 chart-mt" style="border-radius: 10px; background-color: #ffffff5e">
                         <div class="d-flex justify-content-between align-content-center mb-4">
                           <p class="w-75 m-0 title">Tình hình thực hiện dự án đầu tư trên địa bàn tỉnh hàng năm</p>
                           <p class="fas fa-bars"></p>
@@ -1758,7 +1811,7 @@
                       </div>
                     </div>
                     <div class="col-sm-4 col-12">
-                      <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd">
+                      <div class="col-items p-2 chart-mt" style="border-radius: 10px; background-color: #ffffff5e">
                         <div class="d-flex justify-content-between align-content-center mb-4">
                           <p class="w-75 m-0 title">Tình hình thực hiện dự án đầu tư trên địa bàn tỉnh hàng năm</p>
                           <p class="fas fa-bars"></p>
@@ -1771,7 +1824,7 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-4 col-12">
-                      <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd">
+                      <div class="col-items p-2 chart-mt" style="border-radius: 10px; background-color: #ffffff5e">
                         <div class="d-flex justify-content-between align-content-center mb-4">
                           <p class="w-75 m-0 title">Tình hình thực hiện dự án đầu tư trên địa bàn tỉnh hàng năm</p>
                           <p class="fas fa-bars"></p>
@@ -1782,7 +1835,7 @@
                       </div>
                     </div>
                     <div class="col-sm-8 col-12">
-                      <div class="col-items p-2" style="border-radius: 10px; background-color: #ddd">
+                      <div class="col-items p-2 chart-mt" style="border-radius: 10px; background-color: #ffffff5e">
                         <div class="d-flex justify-content-between align-content-center mb-4">
                           <p class="w-75 m-0 title">Tình hình thực hiện dự án đầu tư trên địa bàn tỉnh hàng năm</p>
                           <p class="fas fa-bars"></p>
@@ -1847,7 +1900,7 @@
   </footer>
 
   <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <!-- <script src="./node_modules/popper.js/dist/popper.min.js"></script> -->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="./node_modules/owl.carousel2/dist/owl.carousel.min.js"></script>
   <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
@@ -1860,13 +1913,9 @@
   <script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
   <script src="./global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
   <script src="./global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
-  <script src="./global_assets/js/plugins/notifications/jgrowl.min.js"></script>
   <script src="./node_modules/owl.carousel2/dist/owl.carousel.min.js"></script>
-  <!-- Theme JS files -->
   <script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
-  <!-- <script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script> -->
   <script src="./global_assets/js/plugins/tables/datatables/extensions/jszip/jszip.min.js"></script>
-  <!-- <script src="./global_assets/js/plugins/tables/datatables/extensions/pdfmake/vfs_fonts.min.js"></script> -->
   <script src="./global_assets/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
 
   <script src="./global_assets/js/demo_pages/datatables_extension_buttons_html5.js"></script>
@@ -1878,12 +1927,22 @@
   <script src="./Global/js/bar-chart-horizontal.js"></script>
   <script src="./Global/js/bar-chart-horizontal-tab-2.js"></script>
   <script>
+    //btn reset input
     $("#reset-inp").click(function () {
       $("#search-du-an").val("");
     });
+    //select 2
     $(".slc_ct").select2({
-      theme: "bootstrap"
+      theme: "bootstrap",
+      width: '100%'
     });
+
+    //focus input select 2
+    $('.icon-down-slect2').click(function () {
+      $('.slc_ct').focus();
+    });
+
+    //datepicker js
     $('.picker__input').pickadate({
       monthsFull: ['Tháng Một', 'Tháng Hai', 'Tháng Ba', 'Tháng Tư', 'Tháng Năm', 'Tháng Sáu', 'Tháng Bảy',
         'Tháng Tám', 'Tháng Chín', 'Tháng Mười', 'Tháng Mười Một', 'Tháng Mười Hai'
@@ -1910,8 +1969,10 @@
     })
     //slider
     $('#slider-main-top').owlCarousel({
-      loop: true,
-      margin: 10,
+      loop: false,
+      margin: 0,
+      responsiveClass: true,
+      // smartSpeed: 500,
       nav: false,
       responsive: {
         0: {
