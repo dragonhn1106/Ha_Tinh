@@ -73,7 +73,7 @@
 				top: 0;
 				margin: auto;
 				line-height: 34px;
-				width: 30px	;
+				width: 30px;
 				background-color: #b4b4b4;
 				border-radius: 4px;
 			}
@@ -88,9 +88,10 @@
 		}
 
 		.select2-selection__arrow {
-			b{
+			b {
 				display: none;
 			}
+
 			// display: none;
 		}
 	}
@@ -105,10 +106,12 @@
 				color: #2c84c5;
 				// max-width: 330px;
 				// min-height: 90px;
-
-				@media (max-width: 768px) {
+				@media (max-width: 400px){
+					
+				}
+				@media (min-width: 400px) and (max-width: 768px) {
 					min-width: auto;
-					min-height: 125px;
+					min-height: auto;
 
 					.title {
 						text-align: center

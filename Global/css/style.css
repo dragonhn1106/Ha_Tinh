@@ -1,450 +1,198 @@
 @import url(~font-awesome/css/font-awesome.css);
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.otf") format("opentype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.svg") format("svg"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.woff2") format("woff2");
-  /* Modern Browsers */ }
+@font-face { font-family: "Roboto-Bold"; src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot"); /* IE9 Compat Modes */ src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.otf") format("opentype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.svg") format("svg"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.woff2") format("woff2"); /* Modern Browsers */ }
 
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("../fonts/Roboto/Roboto-Regular/fonts/Roboto-Regular.woff") format("woff"); }
+@font-face { font-family: "Roboto-Regular"; src: url("../fonts/Roboto/Roboto-Regular/fonts/Roboto-Regular.woff") format("woff"); }
 
-@font-face {
-  font-family: "Roboto-Light";
-  src: url("../fonts/Roboto/Roboto-Light/fonts/Roboto-Light.woff") format("woff"); }
+@font-face { font-family: "Roboto-Light"; src: url("../fonts/Roboto/Roboto-Light/fonts/Roboto-Light.woff") format("woff"); }
 
-@font-face {
-  font-family: "Myriad-Regular";
-  src: url("../fonts/myriad-pro/MyriadPro-Regular/fonts/MYRIADPRO-REGULAR.woff") format("woff"); }
+@font-face { font-family: "Myriad-Regular"; src: url("../fonts/myriad-pro/MyriadPro-Regular/fonts/MYRIADPRO-REGULAR.woff") format("woff"); }
 
-* {
-  margin: 0px;
-  padding: 0px; }
+* { margin: 0px; padding: 0px; }
 
-:root {
-  --color-white: #fff;
-  --font-size-22: 22px;
-  --font-size-18: 18px;
-  --color-green: #23be07;
-  --color-red: #ff5050; }
+:root { --color-white: #fff; --font-size-22: 22px; --font-size-18: 18px; --color-green: #23be07; --color-red: #ff5050; }
 
-.w-70 {
-  width: 70% !important; }
+.w-70 { width: 70% !important; }
 
-.w-80 {
-  width: 80% !important; }
+.w-80 { width: 80% !important; }
 
-.w-30 {
-  width: 30% !important; }
+.w-30 { width: 30% !important; }
 
-.w-20 {
-  width: 20% !important; }
+.w-20 { width: 20% !important; }
 
-#bar-chart-grouped {
-  height: 30% !important; }
-  @media (max-width: 768px) {
-    #bar-chart-grouped {
-      height: 100% !important; } }
+#bar-chart-grouped { height: 30% !important; }
 
-.header {
-  background-color: #2c84c5; }
-  @media (max-width: 768px) {
-    .header nav.nav-ct {
-      padding: 0px; }
-      .header nav.nav-ct .google-translate {
-        width: 100% !important; }
-      .header nav.nav-ct .navbar-brand img {
-        width: 100%; } }
-  .header nav.nav-ct .nav-item {
-    width: 85%; }
-    .header nav.nav-ct .nav-item .google-translate {
-      width: 25% !important; }
-    .header nav.nav-ct .nav-item p.address_name_headquarters {
-      font-size: var(--font-size-22);
-      font-size: 1.375rem;
-      font-family: "Roboto-Light";
-      color: var(--color-white);
-      color: white;
-      font-weight: 300;
-      margin: 0;
-      text-transform: uppercase; }
-    .header nav.nav-ct .nav-item .name_project {
-      font-size: var(--font-size-22);
-      font-size: 1.375rem;
-      font-family: "Roboto-Bold";
-      color: var(--color-white);
-      color: white;
-      font-weight: bold;
-      margin: 0;
-      text-transform: uppercase; }
-  .header nav.nav-ct .nav-right {
-    list-style-type: none; }
-    .header nav.nav-ct .nav-right li div#google_translate_element {
-      position: relative; }
-    .header nav.nav-ct .nav-right a {
-      text-transform: uppercase;
-      text-decoration: none;
-      font-family: "Roboto-Light";
-      font-size: 14px;
-      color: #fff; }
-      .header nav.nav-ct .nav-right a::before {
-        content: '. :';
-        margin-right: 5px; }
+@media (max-width: 768px) { #bar-chart-grouped { height: 100% !important; } }
 
-.wrap-top {
-  position: relative; }
+.header { background-color: #2c84c5; }
 
-main .content-load-top {
-  background-image: url("../images/bg-main-top.png");
-  min-height: 600px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 50px 0 80px 0; }
-  main .content-load-top::after {
-    height: 60%;
-    width: 2px;
-    background-color: #fff;
-    left: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    content: ''; }
-  main .content-load-top::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    position: absolute;
-    top: 0;
-    opacity: 0.15;
-    left: 0; }
-  main .content-load-top .main-top .title {
-    font-size: 26px;
-    font-family: "Roboto-Light";
-    font-weight: normal;
-    color: #fff; }
-  main .content-load-top .main-top .line-center {
-    position: relative; }
-    main .content-load-top .main-top .line-center::before {
-      position: absolute;
-      width: 1px;
-      height: 60%;
-      background-color: #fff;
-      content: '';
-      top: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      bottom: 0; }
-  main .content-load-top .main-top .luy-ke-thang,
-  main .content-load-top .main-top .luy-ke-tong-nam {
-    color: #fff; }
-    main .content-load-top .main-top .luy-ke-thang .icon-ct .fas,
-    main .content-load-top .main-top .luy-ke-tong-nam .icon-ct .fas {
-      font-size: 25px; }
-    main .content-load-top .main-top .luy-ke-thang .title,
-    main .content-load-top .main-top .luy-ke-tong-nam .title {
-      font-size: 20px;
-      font-family: 'Roboto-Bold'; }
-    main .content-load-top .main-top .luy-ke-thang p,
-    main .content-load-top .main-top .luy-ke-tong-nam p {
-      margin: 0px;
-      text-align: center; }
-      main .content-load-top .main-top .luy-ke-thang p.ty-gia,
-      main .content-load-top .main-top .luy-ke-tong-nam p.ty-gia {
-        font-size: 18px; }
-      main .content-load-top .main-top .luy-ke-thang p i,
-      main .content-load-top .main-top .luy-ke-tong-nam p i {
-        font-size: 20px; }
-      main .content-load-top .main-top .luy-ke-thang p.title,
-      main .content-load-top .main-top .luy-ke-tong-nam p.title {
-        margin-bottom: 15px; }
-      main .content-load-top .main-top .luy-ke-thang p.titles-name,
-      main .content-load-top .main-top .luy-ke-tong-nam p.titles-name {
-        font-size: var(--font-size-18);
-        font-family: "Roboto-Bold";
-        text-transform: uppercase;
-        margin-top: 20px; }
-      main .content-load-top .main-top .luy-ke-thang p.tong-so-du-an,
-      main .content-load-top .main-top .luy-ke-tong-nam p.tong-so-du-an {
-        font-size: 18px;
-        font-family: 'Roboto-Bold';
-        margin-bottom: 0;
-        text-transform: uppercase; }
-        main .content-load-top .main-top .luy-ke-thang p.tong-so-du-an .number,
-        main .content-load-top .main-top .luy-ke-tong-nam p.tong-so-du-an .number {
-          color: #00c0ff;
-          font-size: 40px;
-          font-family: "Roboto-Regular"; }
-    main .content-load-top .main-top .luy-ke-thang .col-tong-so-du-an,
-    main .content-load-top .main-top .luy-ke-tong-nam .col-tong-so-du-an {
-      border-bottom: 1px solid #fff; }
-    main .content-load-top .main-top .luy-ke-thang .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an,
-    main .content-load-top .main-top .luy-ke-tong-nam .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an {
-      list-style-type: none;
-      margin: 0; }
-      main .content-load-top .main-top .luy-ke-thang .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .title,
-      main .content-load-top .main-top .luy-ke-tong-nam .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .title {
-        font-size: 18px;
-        font-family: "Roboto-Bold"; }
-      main .content-load-top .main-top .luy-ke-thang .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .number,
-      main .content-load-top .main-top .luy-ke-tong-nam .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .number {
-        text-align: center; }
-    main .content-load-top .main-top .luy-ke-thang .col-chi-tiet,
-    main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet {
-      position: relative; }
-      main .content-load-top .main-top .luy-ke-thang .col-chi-tiet span.ty-le-giam,
-      main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet span.ty-le-giam {
-        font-size: 14px;
-        color: var(--color-red);
-        font-family: 'Roboto-Bold'; }
-      main .content-load-top .main-top .luy-ke-thang .col-chi-tiet span.ty-le-tang,
-      main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet span.ty-le-tang {
-        font-size: 14px;
-        color: var(--color-green);
-        font-family: 'Roboto-Bold'; }
-      main .content-load-top .main-top .luy-ke-thang .col-chi-tiet ul.chi-tiet-tong-so-du-an,
-      main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet ul.chi-tiet-tong-so-du-an {
-        list-style-type: none;
-        float: right;
-        margin: 0;
-        font-size: 18px;
-        font-family: 'Roboto-Bold'; }
-      main .content-load-top .main-top .luy-ke-thang .col-chi-tiet .number,
-      main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet .number {
-        font-size: 30px;
-        font-family: "Roboto-Regular"; }
-  main .content-load-top .main-top .luy-ke-tong-nam .text-shadow {
-    text-shadow: 1px 1px 0px #524444; }
-  main .content-load-top .main-top .luy-ke-tong-nam .title {
-    font-size: 20px;
-    font-family: 'Roboto-Bold'; }
-  main .content-load-top .main-top .luy-ke-tong-nam p.tong-so-du-an .number {
-    color: #e4ff00;
-    font-size: 40px;
-    font-family: "Roboto-Regular"; }
-  main .content-load-top .main-top .luy-ke-tong-nam p.tong-so-du-an .ty-le-tang {
-    font-size: 16px;
-    font-family: 'Roboto-Bold';
-    color: var(--color-green); }
-  main .content-load-top .main-top .luy-ke-tong-nam .col-tong-so-du-an {
-    border-bottom: 1px solid #fff; }
-  main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet {
-    position: relative; }
-    main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet ul.chi-tiet-tong-so-du-an {
-      list-style-type: none;
-      float: right;
-      margin: 0;
-      font-size: 18px;
-      font-family: 'Roboto-Bold'; }
-    main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet .number {
-      font-size: 30px;
-      font-family: "Roboto-Regular"; }
-      main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet .number span.ty-le-giam {
-        font-size: 14px;
-        color: var(--color-red);
-        font-family: 'Roboto-Bold'; }
-      main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet .number span.ty-le-tang {
-        font-size: 14px;
-        color: var(--color-green);
-        font-family: 'Roboto-Bold'; }
+@media (max-width: 768px) { .header nav.nav-ct { padding: 0px; }
+  .header nav.nav-ct .google-translate { width: 100% !important; }
+  .header nav.nav-ct .navbar-brand img { width: 100%; } }
 
-.panel-content-menu {
-  position: relative;
-  margin-top: -46px; }
-  .panel-content-menu .tab-content > .active {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 5%; }
-  @media (max-width: 768px) {
-    .panel-content-menu .tab-content {
-      margin-bottom: 105px; } }
-  .panel-content-menu .tab-content .form-search .txt-input {
-    position: relative; }
-    .panel-content-menu .tab-content .form-search .txt-input input {
-      height: 100%; }
-    .panel-content-menu .tab-content .form-search .txt-input .link-reset {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      right: 2%;
-      height: auto; }
-      .panel-content-menu .tab-content .form-search .txt-input .link-reset a {
-        margin: auto;
-        line-height: 40px;
-        font-size: 18px;
-        color: #6b6e6f;
-        font-family: "Roboto-Bold";
-        text-decoration: underline; }
-  .panel-content-menu .tab-content .form-search .btn-search {
-    background-color: #2c84c5;
-    border-radius: 2px; }
-    .panel-content-menu .tab-content .form-search .btn-search button {
-      color: #fff;
-      font-size: 18px;
-      font-family: "Roboto-Bold"; }
-  .panel-content-menu .nav-tabs {
-    border-bottom: 0px; }
-    .panel-content-menu .nav-tabs li.nav-item {
-      padding: 0; }
-      .panel-content-menu .nav-tabs li.nav-item a {
-        background-color: #dae3f3;
-        color: #2c84c6;
-        font-family: "Roboto-Regular";
-        border-radius: 10px; }
-        .panel-content-menu .nav-tabs li.nav-item a .title {
-          font-size: 18px;
-          text-transform: uppercase; }
-        .panel-content-menu .nav-tabs li.nav-item a .sub-title {
-          font-size: 16px; }
+.header nav.nav-ct .nav-item { width: 85%; }
 
-main .main-content {
-  background: url("../images/main-content-body.png") center center no-repeat;
-  min-height: 500px;
-  background-size: cover;
-  margin-top: -60px;
-  padding: 100px 0; }
-  @media (max-width: 768px) {
-    main .main-content {
-      padding: 80px 0px;
-      margin-top: -163px; } }
+.header nav.nav-ct .nav-item .google-translate { width: 25% !important; }
 
-footer {
-  background-color: #2c84c5;
-  min-height: 60px;
-  padding: 40px 40px;
-  color: #fff;
-  font-size: 16px;
-  font-family: "Roboto-Regular"; }
+.header nav.nav-ct .nav-item p.address_name_headquarters { font-size: var(--font-size-22); font-size: 1.375rem; font-family: "Roboto-Light"; color: var(--color-white); color: white; font-weight: 300; margin: 0; text-transform: uppercase; }
 
-footer ul {
-  list-style-type: none; }
+.header nav.nav-ct .nav-item .name_project { font-size: var(--font-size-22); font-size: 1.375rem; font-family: "Roboto-Bold"; color: var(--color-white); color: white; font-weight: bold; margin: 0; text-transform: uppercase; }
 
-footer .footer-top ul .text-bold {
-  font-family: 'Roboto-Bold'; }
+.header nav.nav-ct .nav-right { list-style-type: none; }
 
-footer .footer-top {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px; }
+.header nav.nav-ct .nav-right li div#google_translate_element { position: relative; }
 
-footer .footer-bottom {
-  padding-top: 10px;
-  color: #fff; }
+.header nav.nav-ct .nav-right a { text-transform: uppercase; text-decoration: none; font-family: "Roboto-Light"; font-size: 14px; color: #fff; }
 
-footer .footer-bottom a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 15px;
-  position: relative; }
+.header nav.nav-ct .nav-right a::before { content: '. :'; margin-right: 5px; }
 
-footer .footer-bottom ul li a::before {
-  content: '';
-  width: 2px;
-  height: 80%;
-  background-color: #fff;
-  position: absolute;
-  right: -8px;
-  top: 0;
-  margin: auto;
-  bottom: 0; }
+.wrap-top { position: relative; }
 
-footer .footer-bottom ul li.dang-nhap a::after {
-  content: '';
-  width: 2px;
-  height: 80%;
-  background-color: #2c84c5;
-  position: absolute;
-  right: -10%;
-  top: 0;
-  margin: auto;
-  bottom: 0; }
+main .content-load-top { background-image: url("../images/bg-main-top.png"); min-height: 600px; background-position: center center; background-size: cover; background-repeat: no-repeat; position: relative; padding: 50px 0 80px 0; }
 
-@media (max-width: 768px) {
-  .w-mb-100 {
-    width: 100% !important; }
-  .content-load-top::after {
-    content: '';
-    width: 0px !important; }
-  .content-load-top .luy-ke-thang,
-  .content-load-top .luy-ke-tong-nam {
-    border-bottom: 2px solid #ddd;
-    margin-bottom: 20px; }
-    .content-load-top .luy-ke-thang .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .number,
-    .content-load-top .luy-ke-tong-nam .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .number {
-      margin: auto;
-      width: auto !important; }
-    .content-load-top .luy-ke-thang .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .title,
-    .content-load-top .luy-ke-tong-nam .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .title {
-      margin: auto !important;
-      padding: 0 5px; }
-    .content-load-top .luy-ke-thang .col-tong-so-du-an ul.chi-tiet-tinh-trang-du-an,
-    .content-load-top .luy-ke-tong-nam .col-tong-so-du-an ul.chi-tiet-tinh-trang-du-an {
-      background-color: red; }
-    .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet,
-    .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      height: 100%;
-      margin: auto !important; }
-      .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet .ty-gia,
-      .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet .ty-gia {
-        margin: auto !important; }
-      .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet .title,
-      .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet .title {
-        width: 100% !important; }
-      .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet .number,
-      .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet .number {
-        width: 100% !important; }
-      .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet .chi-tiet-tong-so-du-an,
-      .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet .chi-tiet-tong-so-du-an {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        margin: auto !important; }
-        .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet .chi-tiet-tong-so-du-an li,
-        .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet .chi-tiet-tong-so-du-an li {
-          margin-right: 5px;
-          padding-left: 0px !important;
-          padding-right: 0px !important; }
-  .content-load-top .luy-ke-tong-nam .col-chi-tiet {
-    -ms-flex-wrap: wrap !important;
-    flex-wrap: wrap !important; }
-    .content-load-top .luy-ke-tong-nam .col-chi-tiet p.number {
-      margin: auto !important;
-      width: 100%; }
-    .content-load-top .luy-ke-tong-nam .col-chi-tiet ul.chi-tiet-tong-so-du-an {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      width: 100% !important;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .content-load-top .luy-ke-tong-nam .col-chi-tiet ul.chi-tiet-tong-so-du-an.col-right {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        width: 100%;
-        margin: auto;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        text-align: center !important; }
-  .panel-content-menu {
-    position: relative;
-    margin-top: -69px; }
-    .panel-content-menu .nav-tabs li.nav-item {
-      width: 100% !important;
-      border: 1px solid #fff !important; } }
+main .content-load-top::after { height: 60%; width: 2px; background-color: #fff; left: 0; right: 0; margin: auto; position: absolute; top: 0; bottom: 0; content: ''; }
+
+main .content-load-top::before { content: ''; width: 100%; height: 100%; background-color: #000000; position: absolute; top: 0; opacity: 0.15; left: 0; }
+
+@media (max-width: 1200px) { main .content-load-top::after { display: none; } }
+
+main .content-load-top .main-top .title { font-size: 26px; font-family: "Roboto-Light"; font-weight: normal; color: #fff; }
+
+main .content-load-top .main-top .line-center { position: relative; }
+
+main .content-load-top .main-top .line-center::before { position: absolute; width: 1px; height: 60%; background-color: #fff; content: ''; top: 0; left: 0; right: 0; margin: auto; bottom: 0; }
+
+main .content-load-top .main-top .luy-ke-thang, main .content-load-top .main-top .luy-ke-tong-nam { color: #fff; }
+
+main .content-load-top .main-top .luy-ke-thang .icon-ct .fas, main .content-load-top .main-top .luy-ke-tong-nam .icon-ct .fas { font-size: 25px; }
+
+main .content-load-top .main-top .luy-ke-thang .title, main .content-load-top .main-top .luy-ke-tong-nam .title { font-size: 20px; font-family: 'Roboto-Bold'; }
+
+main .content-load-top .main-top .luy-ke-thang p, main .content-load-top .main-top .luy-ke-tong-nam p { margin: 0px; text-align: center; }
+
+main .content-load-top .main-top .luy-ke-thang p.ty-gia, main .content-load-top .main-top .luy-ke-tong-nam p.ty-gia { font-size: 18px; }
+
+main .content-load-top .main-top .luy-ke-thang p i, main .content-load-top .main-top .luy-ke-tong-nam p i { font-size: 20px; }
+
+main .content-load-top .main-top .luy-ke-thang p.title, main .content-load-top .main-top .luy-ke-tong-nam p.title { margin-bottom: 15px; }
+
+main .content-load-top .main-top .luy-ke-thang p.titles-name, main .content-load-top .main-top .luy-ke-tong-nam p.titles-name { font-size: var(--font-size-18); font-family: "Roboto-Bold"; text-transform: uppercase; margin-top: 20px; }
+
+main .content-load-top .main-top .luy-ke-thang p.tong-so-du-an, main .content-load-top .main-top .luy-ke-tong-nam p.tong-so-du-an { font-size: 18px; font-family: 'Roboto-Bold'; margin-bottom: 0; text-transform: uppercase; }
+
+main .content-load-top .main-top .luy-ke-thang p.tong-so-du-an .number, main .content-load-top .main-top .luy-ke-tong-nam p.tong-so-du-an .number { color: #00c0ff; font-size: 40px; font-family: "Roboto-Regular"; }
+
+main .content-load-top .main-top .luy-ke-thang .col-tong-so-du-an, main .content-load-top .main-top .luy-ke-tong-nam .col-tong-so-du-an { border-bottom: 1px solid #fff; }
+
+main .content-load-top .main-top .luy-ke-thang .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an, main .content-load-top .main-top .luy-ke-tong-nam .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an { list-style-type: none; margin: 0; }
+
+main .content-load-top .main-top .luy-ke-thang .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .title, main .content-load-top .main-top .luy-ke-tong-nam .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .title { font-size: 18px; font-family: "Roboto-Bold"; }
+
+main .content-load-top .main-top .luy-ke-thang .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .number, main .content-load-top .main-top .luy-ke-tong-nam .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .number { text-align: center; }
+
+main .content-load-top .main-top .luy-ke-thang .col-chi-tiet, main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet { position: relative; }
+
+main .content-load-top .main-top .luy-ke-thang .col-chi-tiet span.ty-le-giam, main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet span.ty-le-giam { font-size: 14px; color: var(--color-red); font-family: 'Roboto-Bold'; }
+
+main .content-load-top .main-top .luy-ke-thang .col-chi-tiet span.ty-le-tang, main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet span.ty-le-tang { font-size: 14px; color: var(--color-green); font-family: 'Roboto-Bold'; }
+
+main .content-load-top .main-top .luy-ke-thang .col-chi-tiet ul.chi-tiet-tong-so-du-an, main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet ul.chi-tiet-tong-so-du-an { list-style-type: none; float: right; margin: 0; font-size: 18px; font-family: 'Roboto-Bold'; }
+
+main .content-load-top .main-top .luy-ke-thang .col-chi-tiet .number, main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet .number { font-size: 30px; font-family: "Roboto-Regular"; }
+
+main .content-load-top .main-top .luy-ke-tong-nam .text-shadow { text-shadow: 1px 1px 0px #524444; }
+
+main .content-load-top .main-top .luy-ke-tong-nam .title { font-size: 20px; font-family: 'Roboto-Bold'; }
+
+main .content-load-top .main-top .luy-ke-tong-nam p.tong-so-du-an .number { color: #e4ff00; font-size: 40px; font-family: "Roboto-Regular"; }
+
+main .content-load-top .main-top .luy-ke-tong-nam p.tong-so-du-an .ty-le-tang { font-size: 16px; font-family: 'Roboto-Bold'; color: var(--color-green); }
+
+main .content-load-top .main-top .luy-ke-tong-nam .col-tong-so-du-an { border-bottom: 1px solid #fff; }
+
+main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet { position: relative; }
+
+main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet ul.chi-tiet-tong-so-du-an { list-style-type: none; float: right; margin: 0; font-size: 18px; font-family: 'Roboto-Bold'; }
+
+main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet .number { font-size: 30px; font-family: "Roboto-Regular"; }
+
+main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet .number span.ty-le-giam { font-size: 14px; color: var(--color-red); font-family: 'Roboto-Bold'; }
+
+main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet .number span.ty-le-tang { font-size: 14px; color: var(--color-green); font-family: 'Roboto-Bold'; }
+
+.panel-content-menu { position: relative; margin-top: -46px; }
+
+.panel-content-menu .tab-content > .active { display: block; margin-top: 20px; margin-bottom: 5%; }
+
+@media (max-width: 768px) { .panel-content-menu .tab-content { margin-bottom: 105px; } }
+
+.panel-content-menu .tab-content .form-search .txt-input { position: relative; }
+
+.panel-content-menu .tab-content .form-search .txt-input input { height: 100%; }
+
+.panel-content-menu .tab-content .form-search .txt-input .link-reset { position: absolute; top: 0; bottom: 0; margin: auto; right: 2%; height: auto; }
+
+.panel-content-menu .tab-content .form-search .txt-input .link-reset a { margin: auto; line-height: 40px; font-size: 18px; color: #6b6e6f; font-family: "Roboto-Bold"; text-decoration: underline; }
+
+.panel-content-menu .tab-content .form-search .btn-search { background-color: #2c84c5; border-radius: 2px; }
+
+.panel-content-menu .tab-content .form-search .btn-search button { color: #fff; font-size: 18px; font-family: "Roboto-Bold"; }
+
+.panel-content-menu .nav-tabs { border-bottom: 0px; }
+
+.panel-content-menu .nav-tabs li.nav-item { padding: 0; }
+
+.panel-content-menu .nav-tabs li.nav-item a { background-color: #dae3f3; color: #2c84c6; font-family: "Roboto-Regular"; border-radius: 10px; }
+
+.panel-content-menu .nav-tabs li.nav-item a .title { font-size: 18px; text-transform: uppercase; }
+
+.panel-content-menu .nav-tabs li.nav-item a .sub-title { font-size: 16px; }
+
+main .main-content { background: url("../images/main-content-body.png") center center no-repeat; min-height: 500px; background-size: cover; margin-top: -60px; padding: 100px 0; }
+
+@media (min-width: 0) and (max-width: 400px) { main .main-content { padding: 80px 0px; margin-top: -163px !important; } }
+
+@media (min-width: 400px) and (max-width: 780px) { main .main-content { padding: 80px 0px; margin-top: -151px !important; } }
+
+@media (min-width: 780px) and (max-width: 1000px) { main .main-content { padding: 120px 0px; margin-top: -97px !important; } }
+
+@media (min-width: 1001px) and (max-width: 1200px) { main .main-content { padding: 80px 0px; margin-top: -72px !important; } }
+
+footer { background-color: #2c84c5; min-height: 60px; padding: 40px 40px; color: #fff; font-size: 16px; font-family: "Roboto-Regular"; }
+
+footer ul { list-style-type: none; }
+
+footer .footer-top ul .text-bold { font-family: 'Roboto-Bold'; }
+
+footer .footer-top { border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+
+footer .footer-bottom { padding-top: 10px; color: #fff; }
+
+footer .footer-bottom a { color: #fff; text-decoration: none; margin-right: 15px; position: relative; }
+
+footer .footer-bottom ul li a::before { content: ''; width: 2px; height: 80%; background-color: #fff; position: absolute; right: -8px; top: 0; margin: auto; bottom: 0; }
+
+footer .footer-bottom ul li.dang-nhap a::after { content: ''; width: 2px; height: 80%; background-color: #2c84c5; position: absolute; right: -10%; top: 0; margin: auto; bottom: 0; }
+
+@media (max-width: 768px) { .w-mb-100 { width: 100% !important; }
+  .content-load-top::after { content: ''; width: 0px !important; }
+  .content-load-top .luy-ke-thang, .content-load-top .luy-ke-tong-nam { border-bottom: 2px solid #ddd; margin-bottom: 20px; }
+  .content-load-top .luy-ke-thang .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .number, .content-load-top .luy-ke-tong-nam .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .number { margin: auto; width: auto !important; }
+  .content-load-top .luy-ke-thang .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .title, .content-load-top .luy-ke-tong-nam .col-tinh-trang-du-an ul.chi-tiet-tinh-trang-du-an .title { margin: auto !important; padding: 0 5px; }
+  .content-load-top .luy-ke-thang .col-tong-so-du-an ul.chi-tiet-tinh-trang-du-an, .content-load-top .luy-ke-tong-nam .col-tong-so-du-an ul.chi-tiet-tinh-trang-du-an { background-color: red; }
+  .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet, .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 100%; margin: auto !important; }
+  .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet .ty-gia, .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet .ty-gia { margin: auto !important; }
+  .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet .title, .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet .title { width: 100% !important; }
+  .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet .number, .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet .number { width: 100% !important; }
+  .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet .chi-tiet-tong-so-du-an, .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet .chi-tiet-tong-so-du-an { display: -webkit-box; display: -ms-flexbox; display: flex; margin: auto !important; }
+  .content-load-top .luy-ke-thang .col-tong-so-du-an .col-chi-tiet .chi-tiet-tong-so-du-an li, .content-load-top .luy-ke-tong-nam .col-tong-so-du-an .col-chi-tiet .chi-tiet-tong-so-du-an li { margin-right: 5px; padding-left: 0px !important; padding-right: 0px !important; }
+  .content-load-top .luy-ke-tong-nam .col-chi-tiet { -ms-flex-wrap: wrap !important; flex-wrap: wrap !important; }
+  .content-load-top .luy-ke-tong-nam .col-chi-tiet p.number { margin: auto !important; width: 100%; }
+  .content-load-top .luy-ke-tong-nam .col-chi-tiet ul.chi-tiet-tong-so-du-an { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100% !important; display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .content-load-top .luy-ke-tong-nam .col-chi-tiet ul.chi-tiet-tong-so-du-an.col-right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; margin: auto; -ms-flex-direction: column; flex-direction: column; text-align: center !important; }
+  .panel-content-menu { position: relative; margin-top: -69px; } }
+
+@media (max-width: 768px) and (min-width: 400px) and (max-width: 780px) { .panel-content-menu { margin-top: 0px !important; } }
+
+@media (max-width: 768px) and (min-width: 1001px) and (max-width: 1200px) { .panel-content-menu { padding: 80px 0px; margin-top: 0px !important; } }
+
+@media (max-width: 768px) { .panel-content-menu .nav-tabs li.nav-item { width: 100% !important; border: 1px solid #fff !important; } }
