@@ -1,0 +1,45 @@
+@import "./font-style.scss";
+
+.container {
+    background-color: #5ed68e;
+}
+
+.col-luy-ke {
+    color: #ffffff;
+
+    p.title {
+        font-size: 18px;
+        font-family: "Roboto-Bold";
+    }
+
+    .item-luy-ke__title {
+        font-size: 18px;
+        font-family: "Roboto-Bold";
+
+        .number {
+            color: #00c0ff;
+            font-size: 40px;
+
+        }
+    }
+
+    .item-luy-ke__bottom {
+        .title_left {
+            font-size: 18px;
+            font-family: "Roboto-Bold";
+            width: 70%;
+        }
+
+        .title_right {
+            font-size: 18px;
+            font-family: "Roboto-Bold";
+            width: 60%; 
+        }
+
+        .number {
+            font-size: 30px;
+            font-family: "Roboto-Regular";
+        }
+    }
+
+}

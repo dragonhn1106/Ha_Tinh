@@ -34,7 +34,12 @@ new Chart(document.getElementById("bar-chart-grouped"), {
         title: {},
         legend: {
             display: true,
-            position: 'bottom'
+            position: 'bottom',
+            labels: {
+                fontColor: '#2c5880',
+                fontStyle: "bold",
+                fontSize: 12
+            }
         },
         scales: {
             xAxes: [{
@@ -64,6 +69,7 @@ new Chart(document.getElementById("bar-chart-grouped"), {
                     max: 6000,
                     min: 0,
                     stepSize: 3000,
+                    fontColor: "#1f4e79",
 
                 },
             }],

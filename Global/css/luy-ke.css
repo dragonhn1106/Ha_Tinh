@@ -1,0 +1,23 @@
+@font-face { font-family: "Roboto-Bold"; src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot"); /* IE9 Compat Modes */ src: url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.otf") format("opentype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.svg") format("svg"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold/fonts/Roboto-Bold.woff2") format("woff2"); /* Modern Browsers */ }
+
+@font-face { font-family: "Roboto-Regular"; src: url("../fonts/Roboto/Roboto-Regular/fonts/Roboto-Regular.woff") format("woff"); }
+
+@font-face { font-family: "Roboto-Light"; src: url("../fonts/Roboto/Roboto-Light/fonts/Roboto-Light.woff") format("woff"); }
+
+@font-face { font-family: "Myriad-Regular"; src: url("../fonts/myriad-pro/MyriadPro-Regular/fonts/MYRIADPRO-REGULAR.woff") format("woff"); }
+
+.container { background-color: #5ed68e; }
+
+.col-luy-ke { color: #ffffff; }
+
+.col-luy-ke p.title { font-size: 18px; font-family: "Roboto-Bold"; }
+
+.col-luy-ke .item-luy-ke__title { font-size: 18px; font-family: "Roboto-Bold"; }
+
+.col-luy-ke .item-luy-ke__title .number { color: #00c0ff; font-size: 40px; }
+
+.col-luy-ke .item-luy-ke__bottom .title_left { font-size: 18px; font-family: "Roboto-Bold"; width: 70%; }
+
+.col-luy-ke .item-luy-ke__bottom .title_right { font-size: 18px; font-family: "Roboto-Bold"; width: 60%; }
+
+.col-luy-ke .item-luy-ke__bottom .number { font-size: 30px; font-family: "Roboto-Regular"; }

@@ -12,7 +12,10 @@ new Chart(document.getElementById("bar-chart-top-left"), {
     options: {
         legend: {
             display: true,
-            position: 'bottom'
+            position: 'bottom',
+            labels: {
+                fontColor: '#2c5880'
+            }
         },
         scales: {
             xAxes: [{
@@ -49,7 +52,10 @@ new Chart(document.getElementById("bar-chart-top-left-tab-2"), {
     options: {
         legend: {
             display: true,
-            position: 'bottom'
+            position: 'bottom',
+            labels: {
+                fontColor: '#2c5880'
+            }
         },
         scales: {
             xAxes: [{

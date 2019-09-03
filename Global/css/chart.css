@@ -6,7 +6,7 @@
 
 @font-face { font-family: "Myriad-Regular"; src: url("../fonts/myriad-pro/MyriadPro-Regular/fonts/MYRIADPRO-REGULAR.woff") format("woff"); }
 
-.main-content-chart .chart-fdi-cls { background-color: #ffff !important; border: 1px solid #f95808; color: black !important; width: 80%; }
+.main-content-chart .chart-fdi-cls { background-color: #fff !important; border: 1px solid #f95808; color: black !important; width: 80%; }
 
 .main-content-chart .chart-fdi-cls.active { background-color: #f95808 !important; color: #fff !important; border: 1px solid #f95808; border-bottom-left-radius: 0 !important; border-bottom-right-radius: 0 !important; }
 
@@ -14,11 +14,11 @@
 
 @media (max-width: 768px) { .main-content-chart .chart-fdi-cls.active .icon-change-chart { padding: 3px 6px; } }
 
-.main-content-chart .icon-change-chart { background-color: #f95808; color: #ffff; padding: 5px 12px; border-radius: 10px; }
+.main-content-chart .icon-change-chart { background-color: #f95808; color: #fff; padding: 5px 12px; border-radius: 10px; }
 
 @media (max-width: 768px) { .main-content-chart .icon-change-chart { padding: 3px 6px; } }
 
-.chart-fdi-op { background-color: #ffff !important; border: 1px solid #22d294; color: black !important; width: 80%; border-top-left-radius: 0 !important; border-top-right-radius: 0 !important; }
+.chart-fdi-op { background-color: #fff !important; border: 1px solid #22d294; color: black !important; width: 80%; border-top-left-radius: 0 !important; border-top-right-radius: 0 !important; }
 
 .chart-fdi-op.active { background-color: #22d294 !important; color: #fff !important; }
 
@@ -26,7 +26,7 @@
 
 @media (max-width: 768px) { .chart-fdi-op.active .icon-change-chart { padding: 3px 6px; } }
 
-.chart-fdi-op .icon-change-chart { background-color: #22d294; color: #ffff; padding: 5px 12px; border-radius: 10px; }
+.chart-fdi-op .icon-change-chart { background-color: #22d294; color: #fff; padding: 5px 12px; border-radius: 10px; }
 
 @media (max-width: 768px) { .chart-fdi-op .icon-change-chart { padding: 3px 6px; } }
 

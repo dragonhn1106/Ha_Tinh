@@ -1,0 +1,162 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="pbckcode">pbckcode</h1>
+<p>A CKEditor plugin to easily add code into your articles.
+The plugin will create a dialog where you will be able to format your code as your will. When you press the <strong>OK</strong> button, the plugin will create a <em>pre</em> tag with your code inside.</p>
+<h1 id="demo">Demo</h1>
+<p>See it in action ! <a href="http://prbaron.github.com/pbckcode/">http://prbaron.github.com/pbckcode/</a></p>
+<h1 id="installation">Installation</h1>
+<ol>
+<li>Download the plugin from the Github repository : <a href="https://github.com/prbaron/pbckcode/tags">https://github.com/prbaron/pbckcode/tags</a></li>
+<li>Rename it to <strong>pbckcode</strong> (it will be easier to call it into CKEditor)</li>
+<li>Place the folder into the plugins folder of CKEditor ( <em>{Path to CKEDitor}/plugins/</em> )</li>
+<li>Open the config.js file and add the following lines :</li>
+</ol>
+<pre><code> CKEDITOR.editorConfig = function( config ) {
+     // CKEDITOR TOOLBAR CUSTOMIZATION
+     // I only set the needed buttons, so feel frey to add those you want in the array
+     config.toolbarGroups = [
+         { name: &#39;pbckcode&#39; } ,
+         // you other buttons here
+     ];
+
+     // CKEDITOR PLUGINS LOADING
+     config.extraPlugins = &#39;pbckcode&#39;; // add other plugins here (comma separated)
+
+     // ADVANCED CONTENT FILTER (ACF)
+     // ACF protects your CKEditor instance of adding unofficial tags
+     // however it strips out the pre tag of pbckcode plugin
+     // add this rule to enable it, useful when you want to re edit a post
+     config.allowedContent= &#39;pre[*]{*}(*)&#39;; // add other rules here
+
+
+     // PBCKCODE CUSTOMIZATION
+     config.pbckcode = {
+         // An optional class to your pre tag.
+         cls : &#39;&#39;,
+
+         // The syntax highlighter you will use in the output view
+         highlighter : &#39;PRETTIFY&#39;,
+
+         // An array of the available modes for you plugin.
+         // The key corresponds to the string shown in the select tag.
+         // The value correspond to the loaded file for ACE Editor.
+         modes :  [ [&#39;HTML&#39;, &#39;html&#39;], [&#39;CSS&#39;, &#39;css&#39;], [&#39;PHP&#39;, &#39;php&#39;], [&#39;JS&#39;, &#39;javascript&#39;] ],
+
+         // The theme of the ACE Editor of the plugin.
+         theme : &#39;textmate&#39;,
+
+         // Tab indentation (in spaces)
+         tab_size : &#39;4&#39;
+     };
+ };
+</code></pre><p>And you are good to go! You will have the same configuration than the demo.</p>
+<h1 id="options">Options</h1>
+<h2 id="highlighter">highlighter</h2>
+<p>Choose your synta highlighter output. Remove the option if you want to output a basic &lt;pre&gt; tag, otherwise, choose one of them.</p>
+<pre><code>&#39;HIGHLIGHT&#39; // http://highlightjs.org/
+&#39;PRETTIFY&#39; // https://code.google.com/p/google-code-prettify/
+&#39;PRISM&#39; // http://prismjs.com/
+&#39;SYNTAX_HIGHLIGHTER&#39; // http://alexgorbatchev.com/SyntaxHighlighter/
+</code></pre><h2 id="modes">modes</h2>
+<pre><code>// Available modes
+[&#39;C/C++&#39;        , &#39;c_pp&#39;]
+[&#39;C9Search&#39;     , &#39;c9search&#39;]
+[&#39;Clojure&#39;      , &#39;clojure&#39;]
+[&#39;CoffeeScript&#39; , &#39;coffee&#39;]
+[&#39;ColdFusion&#39;   , &#39;coldfusion&#39;]
+[&#39;C#&#39;           , &#39;csharp&#39;]
+[&#39;CSS&#39;          , &#39;css&#39;]
+[&#39;Diff&#39;         , &#39;diff&#39;]
+[&#39;Glsl&#39;         , &#39;glsl&#39;]
+[&#39;Go&#39;           , &#39;golang&#39;]
+[&#39;Groovy&#39;       , &#39;groovy&#39;]
+[&#39;haXe&#39;         , &#39;haxe&#39;]
+[&#39;HTML&#39;         , &#39;html&#39;]
+[&#39;Jade&#39;         , &#39;jade&#39;]
+[&#39;Java&#39;         , &#39;java&#39;]
+[&#39;JavaScript&#39;   , &#39;javascript&#39;]
+[&#39;JSON&#39;         , &#39;json&#39;]
+[&#39;JSP&#39;          , &#39;jsp&#39;]
+[&#39;JSX&#39;          , &#39;jsx&#39;]
+[&#39;LaTeX&#39;        , &#39;latex&#39;]
+[&#39;LESS&#39;         , &#39;less&#39;]
+[&#39;Liquid&#39;       , &#39;liquid&#39;]
+[&#39;Lua&#39;          , &#39;lua&#39;]
+[&#39;LuaPage&#39;      , &#39;luapage&#39;]
+[&#39;Markdown&#39;     , &#39;markdown&#39;]
+[&#39;OCaml&#39;        , &#39;ocaml&#39;]
+[&#39;Perl&#39;         , &#39;perl&#39;]
+[&#39;pgSQL&#39;        , &#39;pgsql&#39;]
+[&#39;PHP&#39;          , &#39;php&#39;]
+[&#39;Powershell&#39;   , &#39;powershel1&#39;]
+[&#39;Python&#39;       , &#39;python&#39;]
+[&#39;R&#39;            , &#39;ruby&#39;]
+[&#39;OpenSCAD&#39;     , &#39;scad&#39;]
+[&#39;Scala&#39;        , &#39;scala&#39;]
+[&#39;SCSS/Sass&#39;    , &#39;scss&#39;]
+[&#39;SH&#39;           , &#39;sh&#39;]
+[&#39;SQL&#39;          , &#39;sql&#39;]
+[&#39;SVG&#39;          , &#39;svg&#39;]
+[&#39;Tcl&#39;          , &#39;tcl&#39;]
+[&#39;Text&#39;         , &#39;text&#39;]
+[&#39;Textile&#39;      , &#39;textile&#39;]
+[&#39;XML&#39;          , &#39;xml&#39;]
+[&#39;XQuery&#39;       , &#39;xq&#39;]
+[&#39;YAML&#39;         , &#39;yaml&#39;]
+</code></pre><h2 id="theme">theme</h2>
+<pre><code>// Bright themes
+&#39;chrome&#39;
+&#39;clouds&#39;
+&#39;crimson_editor&#39;
+&#39;dawn&#39;
+&#39;dreamweaver&#39;
+&#39;eclipse&#39;
+&#39;github&#39;
+&#39;solarized_light&#39;
+&#39;textmate&#39; // default theme
+&#39;tomorrow&#39;
+&#39;xcode&#39;
+&#39;kuroir&#39;
+&#39;katzenmilch&#39;
+</code></pre><pre><code>// Dark themes
+&#39;ambiance&#39;
+&#39;chaos&#39;
+&#39;clouds_midnight&#39;
+&#39;cobalt&#39;
+&#39;idle_fingers&#39;
+&#39;kr_theme&#39;
+&#39;merbivore&#39;
+&#39;merbivore_soft&#39;
+&#39;mono_industrial&#39;
+&#39;monokai&#39;
+&#39;pastel_on_dark&#39;
+&#39;solarized_dark&#39;
+&#39;terminal&#39;
+&#39;tomorrow_night&#39;
+&#39;tomorrow_night_blue&#39;
+&#39;tomorrow_night_bright&#39;
+&#39;tomorrow_night_eighties&#39;
+&#39;twilight&#39;
+&#39;vibrant_ink&#39;
+</code></pre><h1 id="special-thanks">Special Thanks</h1>
+<ul>
+<li>CKEditor : <a href="http://ckeditor.com/">http://ckeditor.com/</a></li>
+<li>ACE : <a href="http://ace.ajax.org/">http://ace.ajax.org/</a></li>
+<li>Lea Verou : <a href="http://prismjs.com/">http://prismjs.com/</a></li>
+<li>Google : <a href="https://code.google.com/p/google-code-prettify/">https://code.google.com/p/google-code-prettify/</a></li>
+<li>Ivan Sagalaev : <a href="http://highlightjs.org/">http://highlightjs.org/</a></li>
+<li>Alex Gorbatchev : <a href="http://alexgorbatchev.com/SyntaxHighlighter/">http://alexgorbatchev.com/SyntaxHighlighter/</a></li>
+</ul>
+<h1 id="credits">Credits</h1>
+<h4 id="pierre-baron">Pierre Baron</h4>
+<p>Website : <a href="http://www.pierrebaron.fr">http://www.pierrebaron.fr</a>
+Twitter : <a href="https://twitter.com/prbaron">@prbaron</a>
+Contact : <a href="mailto:&#112;&#x72;&#98;&#97;&#x72;&#111;&#110;&#x32;&#x32;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;">&#112;&#x72;&#98;&#97;&#x72;&#111;&#110;&#x32;&#x32;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;</a></p>
+
+      </body>
+    </html>

@@ -7,6 +7,12 @@
 
         .form-chkb {
             padding-left: 35px;
+
+            @media (max-width: 768px) {
+
+                padding-left: 25px;
+                margin-bottom: 5px;
+            }
         }
     }
 
@@ -44,6 +50,15 @@
 }
 
 @media (max-width: 768px) {
+    .form-check {
+        padding-left: 0;
+
+        .form-chkb {
+            padding-left: 25px;
+            margin-bottom: 5px;
+        }
+    }
+
     .modal-body {
         .modal-body-center {
             .modal-body-bottom__main {
@@ -53,5 +68,9 @@
 
             }
         }
+
+
     }
+
+
 }

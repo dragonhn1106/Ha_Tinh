@@ -11,7 +11,10 @@ new Chart(document.getElementById("bar-chart-horizontal"), {
     options: {
         legend: {
             display: true,
-            position: 'bottom'
+            position: 'bottom',
+            labels: {
+                fontColor: '#2c5880'
+            }
         },
         title: {
             // display: true,

@@ -1,3 +1,4 @@
+Chart.defaults.global.legend.labels.usePointStyle = true;
 new Chart(document.getElementById("mixed-chart-right"), {
     type: 'bar',
     data: {
@@ -8,28 +9,36 @@ new Chart(document.getElementById("mixed-chart-right"), {
             borderColor: "#f95808",
             backgroundColor: "red",
             data: [60, 70, 40, 55, 45],
-            fill: false
+            fill: false,
+            borderWidth: 1
         }, {
             label: "Tổng vốn thực hiện",
             type: "line",
             borderColor: "#fbc523",
             backgroundColor: "#fbc523",
             fill: false,
-            data: [119, 120, 110, 115, 125]
+            data: [119, 120, 110, 115, 125],
+            borderWidth: 1
         }, {
             label: "Tổng số dự án",
             type: "bar",
             backgroundColor: "#1e9cef",
             backgroundColorHover: "#1e9cef",
             data: [10, 110, 110, 115, 125],
-            padding: 10
-
+            padding: 10,
+            borderWidth: 1
         }]
     },
     options: {
         legend: {
             display: true,
-            position: 'bottom'
+            position: 'bottom',
+            borderWidth: 1,
+            labels: {
+                fontColor: '#2c5880',
+                fontStyle: "bold",
+                // fontSize: 9,
+            }
         },
         scales: {
             xAxes: [{
@@ -58,8 +67,6 @@ new Chart(document.getElementById("mixed-chart-right"), {
                     max: 150,
                     min: 0,
                     stepSize: 20,
-                    // stepSize: 0.5,
-                    // max: Math.max.apply(null, [ < %= arrValue % > ]) + 1,
                     display: true,
                     fontSize: 11,
                     padding: 12,
@@ -96,6 +103,7 @@ new Chart(document.getElementById("mixed-chart-right-tab-2"), {
             backgroundColor: "red",
             data: [60, 70, 40, 55, 45],
             fill: false
+            
         }, {
             label: "Tổng vốn thực hiện",
             type: "line",

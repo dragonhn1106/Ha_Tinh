@@ -20,10 +20,13 @@ new Chart(document.getElementById("doughnut-chart"), {
   options: {
     legend: {
       display: true,
-      position: 'bottom'
+      position: 'bottom',
+      labels: {
+        fontColor: '#2c5880'
+      }
     },
-    
-   
+
+
   }
 });
 new Chart(document.getElementById("doughnut-chart-tab-2"), {
@@ -48,7 +51,10 @@ new Chart(document.getElementById("doughnut-chart-tab-2"), {
   options: {
     legend: {
       display: true,
-      position: 'bottom'
+      position: 'bottom',
+      labels: {
+        fontColor: '#2c5880'
+      }
     },
   }
 });
