@@ -533,7 +533,7 @@
                                         <select class="slc_ct form-control w-50 mr-2 p-0" name="state">
                                           <option value="AL">Cơ quan phê duyệt</option>
                                         </select>
-                                        <div class="icon-down-slect2" >
+                                        <div class="icon-down-slect2">
                                           <i class="fas fa-chevron-down text-white"></i>
                                         </div>
                                       </div>
@@ -575,23 +575,24 @@
                                     <div class="w-100 mt-3">
                                       <label class="m-auto" for="exampleInputEmail1">Thời gian hoạt động</label>
                                     </div>
-                                    <div class="d-flex">
-                                      <div class="d-flex align-items-center w-50 mr-2">
-                                        <label class="mr-1 m-0">Từ</label>
+                                    <div class="d-flex flex-xl-nowrap flex-wrap">
+                                      <div class="d-flex align-items-center  w-100 mr-xl-2 mr-0">
+                                        <label class="mr-1 m-0 w-25">Từ</label>
                                         <div class="input-group">
-
                                           <input type="text" class="form-control pickadate picker__input" value="">
                                           <span class="input-group-prepend">
                                             <span class="input-group-text"><i class="icon-calendar22"></i></span>
                                           </span>
                                         </div>
                                       </div>
-                                      <div class="d-flex align-items-center w-50">
-                                        <label class="mr-1 m-0">Đến</label>
+                                      <div class="d-flex align-items-center w-100 mt-xl-0 mt-2">
+                                        <label class="mr-1 m-0 w-25">Đến</label>
                                         <div class="input-group">
-                                          <input type="text" class="form-control pickadate picker__input" value="">
+                                          <input id="den" type="text" class="form-control pickadate picker__input"
+                                            value="">
                                           <span class="input-group-prepend">
-                                            <span class="input-group-text"><i class="icon-calendar22"></i></span>
+                                            <span for="den" class="input-group-text"><i
+                                                class="icon-calendar22"></i></span>
                                           </span>
                                         </div>
                                       </div>
@@ -1941,9 +1942,15 @@
     });
 
     //focus input select 2
-    $('.icon-down-slect2').click(function () {
+    $('.input-group-text').click(function () {
       $('.slc_ct').focus();
     });
+
+    $('.fa-calendar').click(function () {
+      $(".picker__input").focus();
+    });
+
+    
 
     //datepicker js
     $('.picker__input').pickadate({

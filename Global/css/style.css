@@ -120,7 +120,7 @@ main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet .number span.ty-
 
 main .content-load-top .main-top .luy-ke-tong-nam .col-chi-tiet .number span.ty-le-tang { font-size: 14px; color: var(--color-green); font-family: 'Roboto-Bold'; }
 
-.panel-content-menu { position: relative; margin-top: -46px; z-index: 11111; }
+.panel-content-menu { position: relative; margin-top: -46px; }
 
 .panel-content-menu .tab-content > .active { display: block; margin-top: 20px; margin-bottom: 5%; }
 
@@ -196,8 +196,8 @@ footer .footer-bottom ul li.dang-nhap a::after { content: ''; width: 2px; height
 
 @media (max-width: 768px) and (max-width: 400px) { .panel-content-menu { z-index: 111111; } }
 
-@media (max-width: 768px) and (min-width: 400px) and (max-width: 780px) { .panel-content-menu { margin-top: 0px !important; z-index: 111111; } }
+@media (max-width: 768px) and (min-width: 400px) and (max-width: 780px) { .panel-content-menu { margin-top: 0px !important; } }
 
-@media (max-width: 768px) and (min-width: 1001px) and (max-width: 1200px) { .panel-content-menu { padding: 80px 0px; margin-top: 0px !important; z-index: 111111; } }
+@media (max-width: 768px) and (min-width: 1001px) and (max-width: 1200px) { .panel-content-menu { padding: 80px 0px; margin-top: 0px !important; } }
 
 @media (max-width: 768px) { .panel-content-menu .nav-tabs li.nav-item { width: 100% !important; border: 1px solid #fff !important; } }
