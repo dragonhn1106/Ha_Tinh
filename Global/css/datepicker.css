@@ -421,6 +421,15 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+}
+
+@media (max-width: 1200px) {
+    .picker {
+        /* right: inherit;
+        left: 0; */
+        min-width: 300px;
+    }
 }
 
 .picker__input {

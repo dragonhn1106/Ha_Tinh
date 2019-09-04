@@ -21,6 +21,7 @@
                 color: #f95808;
                 padding: 5px 12px;
                 border-radius: 10px;
+
                 @media (max-width: 768px) {
                     padding: 3px 6px;
                 }
@@ -60,6 +61,7 @@
             color: #22d294;
             padding: 5px 12px;
             border-radius: 10px;
+
             @media (max-width: 768px) {
                 padding: 3px 6px;
             }
@@ -84,11 +86,12 @@
         font-family: "Roboto-Bold";
         color: #1f4e79;
     }
-    .chart-mt{
+
+    .chart-mt {
         @media (max-width: 768px) {
-           padding-top: 10px;
-           margin-top: 10px;
-           margin-bottom: 10px;
+            padding-top: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
     }
 }
